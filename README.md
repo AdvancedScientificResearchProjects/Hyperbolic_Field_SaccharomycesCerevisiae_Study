@@ -32,7 +32,7 @@
 | [Analysis Pipeline / Пайплайн](#analysis-pipeline--аналитический-пайплайн) | Cellpose3 + YeastSAM + AMiGA | Planned |
 | [Statistical Analysis / Статистика](#statistical-analysis--статистический-анализ) | LME + ANOVA + Tukey | Defined |
 | [Equipment / Оборудование](#equipment--оборудование) | Emitters, sensors, microscope | Upgraded / Обновлено |
-| [Team / Команда](#research-team--команда) | 7 researchers / 7 исследователей | Assigned / Назначены |
+| [Team / Команда](#research-team--команда) | 8 researchers / 8 исследователей | Assigned / Назначены |
 | [OSF Preregistration / OSF](#osf-preregistration--предварительная-регистрация-osf) | osf.io/vxkum | Registered / Зарегистрировано |
 | [Patent Connection / Патент](#patent-connection--связь-с-патентом) | KZ 2025/1095.1 | Substantive Exam |
 | [ASRP Ecosystem / Экосистема](#asrp-ecosystem--экосистема-asrp) | Related repos / Связанные репо | Linked |
@@ -408,7 +408,7 @@ timeline
 | **Date Submitted / Дата подачи** | Apr 4, 2026 |
 | **Date Accepted / Дата принятия** | Apr 7, 2026 |
 | **License / Лицензия** | CC-BY-NC-ND 4.0 International |
-| **Contributors / Контрибьюторы** | Valeria Ovseannicova, Denis Banchenko, Alexandr Ovsyannikov, Mykhailo Kapustin, Kyryl Zmiienko, Galina Ovseannicova |
+| **Contributors / Контрибьюторы** | Valeria Ovseannicova, Denis Banchenko, Alexandr Ovsyannikov, Mykhailo Kapustin, Kyryl Zmiienko, Galina Ovseannicova, Eva Ovseannicova |
 
 ---
 
@@ -438,7 +438,8 @@ flowchart TB
 | **Mykhailo Kapustin / Михайло Капустин** | CTO & Director of AI and IT / Технический директор, директор ИИ и ИТ | Data infrastructure / Инфраструктура данных |
 | **Kyryl Zmiienko / Кирилл Змиенко** | Chief AI Engineer / Главный ИИ-инженер | Hypothesis formulation, scientific analysis / Формулировка гипотез, научный анализ |
 | **Ivan Savelyev / Иван Савельев** | Science Director & Editor-in-Chief ASRP.science / Директор по науке | Data logging protocols, methodology review / Протоколы логирования, обзор методологии |
-| **Galina Ovseannicova / Галина Овсянникова** | Researcher / Исследователь | Research support / Поддержка исследований |
+| **Galina Ovseannicova / Галина Овсянникова** | Senior Laboratory Assistant / Старший лаборант | Sample preparation, probe separation / Подготовка образцов, разделение проб |
+| **Eva Ovseannicova / Ева Овсянникова** | Laboratory Assistant / Лаборант | Laboratory support / Лабораторная поддержка |
 
 ---
 
