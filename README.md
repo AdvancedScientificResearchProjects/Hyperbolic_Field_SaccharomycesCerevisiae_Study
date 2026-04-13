@@ -270,14 +270,14 @@ Temperature, medium composition, container type, time from preparation to exposu
 
 | Task / Задача | Tool / Инструмент | Rationale / Обоснование |
 |--------------|------------------|------------------------|
-| **Image denoising** | Cellpose3 one-click restore | Handles phone-through-eyepiece noise, blur, vignetting |
-| **Cell segmentation** | YeastSAM | 72% accuracy on budding cells vs 9-18% Cellpose3 |
-| **Colony counting (macro)** | ImageJ/Fiji via PyImageJ | Validated for CFU, mature tool |
-| **Turbidity (OD600 proxy)** | CIELAB regression (OpenCV) | R^2=0.81 on S. cerevisiae with iPhone |
-| **Viability scoring** | OpenCV LAB b* channel | Per-setup calibration required |
-| **Growth curves** | AMiGA (Gaussian Process) | Non-parametric, auto phase detection, publishable |
-| **Statistics** | LME (statsmodels) + Tukey | More powerful than ANOVA for repeated measures |
-| **Annotation/QC** | napari + YeastSAM plugin | Native Python integration, human-in-the-loop |
+| **Image denoising** | Cellpose3 one-click restore | Handles phone-through-eyepiece noise, blur, vignetting / Устраняет шум, размытие, виньетирование при съёмке через окуляр телефоном |
+| **Cell segmentation** | YeastSAM | 72% accuracy on budding cells vs 9-18% Cellpose3 / 72% точность на почкующихся клетках vs 9-18% Cellpose3 |
+| **Colony counting (macro)** | ImageJ/Fiji via PyImageJ | Validated for CFU, mature tool / Валидирован для КОЕ, зрелый инструмент |
+| **Turbidity (OD600 proxy)** | CIELAB regression (OpenCV) | R²=0.81 on S. cerevisiae with iPhone / R²=0.81 на S. cerevisiae с iPhone |
+| **Viability scoring** | OpenCV LAB b* channel | Per-setup calibration required / Требуется калибровка для каждой установки |
+| **Growth curves** | AMiGA (Gaussian Process) | Non-parametric, auto phase detection, publishable / Непараметрический, автодетекция фаз, пригоден для публикации |
+| **Statistics** | LME (statsmodels) + Tukey | More powerful than ANOVA for repeated measures / Мощнее ANOVA для повторных измерений |
+| **Annotation/QC** | napari + YeastSAM plugin | Native Python integration, human-in-the-loop / Нативная интеграция Python, человек-в-цикле |
 
 ### Pipeline Architecture / Архитектура Пайплайна
 
@@ -434,7 +434,7 @@ flowchart TB
 |-----------|------------|-------------------------------|
 | **Valeria Ovsyannikova / Валерия Овсянникова** | Director of Biomedical Research Department / Директор департамента биомедицинских исследований | Hardware, emitter setup, microscopy, staining / Оборудование, установка, микроскопия, окрашивание |
 | **Denis Banchenko / Денис Банченко** | Program Director, Author of Methodology & Technology / Директор программы, автор методологии и технологии | Coordination, OSF registration, workflow / Координация, OSF, рабочий процесс |
-| **Alexandr Ovsyannikov / Александр Овсянников** | Electrical Engineer / Инженер-электрик | Electrical systems / Электрические системы |
+| **Alexandr Ovsyannikov / Александр Овсянников** | Head Hardware Engineer / Главный Инженер по Аппаратному Обеспечению | Electrical systems / Электрические системы |
 | **Mykhailo Kapustin / Михайло Капустин** | CTO & Director of AI and IT / Технический директор, директор ИИ и ИТ | Data infrastructure / Инфраструктура данных |
 | **Kyryl Zmiienko / Кирилл Змиенко** | Chief AI Engineer / Главный ИИ-инженер | Hypothesis formulation, scientific analysis / Формулировка гипотез, научный анализ |
 | **Ivan Savelyev / Иван Савельев** | Science Director & Editor-in-Chief ASRP.science / Директор по науке | Data logging protocols, methodology review / Протоколы логирования, обзор методологии |
