@@ -7,8 +7,8 @@
 **Хроно-Регуляторные Эффекты Модуляции Гиперболическим Полем на Динамику Ферментации Saccharomyces cerevisiae**
 
 [![ASRP](https://img.shields.io/badge/ASRP-Research-blue)](https://github.com/AdvancedScientificResearchProjects)
-[![Language](https://img.shields.io/badge/Language-EN%2FRU-brightgreen)]()
-[![Status](https://img.shields.io/badge/Status-Setup%20Complete-green)]()
+![Language](https://img.shields.io/badge/Language-EN%2FRU-brightgreen)
+![Status](https://img.shields.io/badge/Status-Setup%20Complete-green)
 [![OSF](https://img.shields.io/badge/OSF-Registered-blue)](https://osf.io/Jgt3h)
 [![License](https://img.shields.io/badge/License-CC--BY--NC--ND%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
@@ -403,7 +403,7 @@ flowchart LR
 | **Date Submitted / Дата подачи** | Apr 4, 2026 |
 | **Date Accepted / Дата принятия** | Apr 7, 2026 |
 | **License / Лицензия** | CC-BY-NC-ND 4.0 International |
-| **Contributors / Контрибьюторы** | Valeria Ovseannicova, Denis Banchenko, Alexandr Ovsyannikov, Mykhailo Kapustin, Kyryl Zmiienko, Galina Ovseannicova, Eva Ovseannicova |
+| **Contributors / Контрибьюторы** | Valeria Ovseannicova, Denis Banchenko, Alexandr Ovsyannikov, Mykhailo Kapustin, Kyryl Zmiienko, Ivan Savelyev, Galina Ovseannicova, Eva Ovseannicova |
 
 ---
 
