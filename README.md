@@ -379,19 +379,14 @@ log(OD) ~ Condition * Timepoint + (1 | SampleID)
 ## TIMELINE / ВРЕМЕННАЯ ШКАЛА
 
 ```mermaid
-timeline
-    title Saccharomyces Study Timeline / Временная Шкала
-    section March 2026
-        Mar 28 : Team assembled, protocol defined
-        Mar 29 : Emitter upgrade 0.7W to 60W/144W
-        Mar 31 : Microscopy calibrated, staining validated
-    section April 2026
-        Apr 4 : OSF preregistration submitted
-        Apr 7 : OSF registration accepted
-        Q2 : Irradiation experiments begin
-    section Q3-Q4 2026
-        : Data collection and CV analysis
-        : Publication preparation
+flowchart LR
+    A["Mar 28\nTeam assembled, protocol defined\nКоманда собрана, протокол определён"] --> B["Mar 29\nEmitter upgrade 0.7W→60W/144W\nМодернизация излучателя"]
+    B --> C["Mar 31\nMicroscopy & staining validated\nМикроскопия и окрашивание валидированы"]
+    C --> D["Apr 4\nOSF preregistration submitted\nПредрегистрация OSF подана"]
+    D --> E["Apr 7\nOSF registration accepted\nРегистрация OSF принята"]
+    E --> F["Q2 2026\nIrradiation experiments begin\nНачало экспериментов по облучению"]
+    F --> G["Q3–Q4 2026\nData collection & CV analysis\nСбор данных и CV-анализ"]
+    G --> H["Q3–Q4 2026\nPublication preparation\nПодготовка публикации"]
 ```
 
 ---
@@ -432,7 +427,7 @@ flowchart TB
 
 | Name / ФИО | Role / Роль | Responsibilities / Обязанности |
 |-----------|------------|-------------------------------|
-| **Valeria Ovsyannikova / Валерия Овсянникова** | Director of Biomedical Research Department / Директор департамента биомедицинских исследований | Hardware, emitter setup, microscopy, staining / Оборудование, установка, микроскопия, окрашивание |
+| **Valeria Ovseannicova / Валерия Овсянникова** | Director of Biomedical Research Department / Директор департамента биомедицинских исследований | Hardware, emitter setup, microscopy, staining / Оборудование, установка, микроскопия, окрашивание |
 | **Denis Banchenko / Денис Банченко** | Program Director, Author of Methodology & Technology / Директор программы, автор методологии и технологии | Coordination, OSF registration, workflow / Координация, OSF, рабочий процесс |
 | **Alexandr Ovsyannikov / Александр Овсянников** | Head Hardware Engineer / Главный Инженер по Аппаратному Обеспечению | Electrical systems / Электрические системы |
 | **Mykhailo Kapustin / Михайло Капустин** | CTO & Director of AI and IT / Технический директор, директор ИИ и ИТ | Data infrastructure / Инфраструктура данных |
