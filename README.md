@@ -26,16 +26,16 @@
 |------------------|----------------------|-----------------|
 | [Overview / Обзор](#overview--обзор) | Study objectives / Цели исследования | Defined / Определено |
 | [Key Metrics / Метрики](#key-metrics--ключевые-метрики) | Study parameters / Параметры | Defined / Определено |
-| [Hypotheses / Гипотезы](#hypotheses--гипотезы) | 11 registered hypotheses / 11 зарегистрированных гипотез | OSF Registered |
-| [Experimental Design / Дизайн](#experimental-design--экспериментальный-дизайн) | RCT, N=25-50, double-blind / РКИ, двойное слепое | Protocol ready |
+| [Hypotheses / Гипотезы](#hypotheses--гипотезы) | 11 registered hypotheses / 11 зарегистрированных гипотез | OSF Registered / Зарегистрировано на OSF |
+| [Experimental Design / Дизайн](#experimental-design--экспериментальный-дизайн) | RCT, N=25-50, double-blind / РКИ, двойное слепое | Protocol ready / Протокол готов |
 | [Outcome Variables / Переменные](#outcome-variables--переменные-исхода) | FAI, FDI, FPI indices / Индексы | Defined / Определены |
-| [Analysis Pipeline / Пайплайн](#analysis-pipeline--аналитический-пайплайн) | Cellpose3 + YeastSAM + AMiGA | Planned |
-| [Statistical Analysis / Статистика](#statistical-analysis--статистический-анализ) | LME + ANOVA + Tukey | Defined |
-| [Equipment / Оборудование](#equipment--оборудование) | Emitters, sensors, microscope | Upgraded / Обновлено |
+| [Analysis Pipeline / Пайплайн](#analysis-pipeline--аналитический-пайплайн) | Cellpose3 + YeastSAM + AMiGA | Planned / Запланировано |
+| [Statistical Analysis / Статистика](#statistical-analysis--статистический-анализ) | LME + ANOVA + Tukey | Defined / Определено |
+| [Equipment / Оборудование](#equipment--оборудование) | Emitters, sensors, microscope / Излучатели, датчики, микроскоп | Upgraded / Обновлено |
 | [Team / Команда](#research-team--команда) | 8 researchers / 8 исследователей | Assigned / Назначены |
 | [OSF Preregistration / OSF](#osf-preregistration--предварительная-регистрация-osf) | osf.io/vxkum | Registered / Зарегистрировано |
-| [Patent Connection / Патент](#patent-connection--связь-с-патентом) | KZ 2025/1095.1 | Substantive Exam |
-| [ASRP Ecosystem / Экосистема](#asrp-ecosystem--экосистема-asrp) | Related repos / Связанные репо | Linked |
+| [Patent Connection / Патент](#patent-connection--связь-с-патентом) | KZ 2025/1095.1 | Substantive Exam / Экспертиза по существу |
+| [ASRP Ecosystem / Экосистема](#asrp-ecosystem--экосистема-asrp) | Related repos / Связанные репо | Linked / Связано |
 
 ---
 
@@ -61,6 +61,8 @@ All experimental materials, protocols, and data will be made available via the a
 
 Исследование использует контролируемый экспериментальный дизайн, сравнивающий облучённые и необлучённые образцы, с непрерывными и временно-разрешёнными измерениями динамики ферментации. Первичные исходные показатели включают скорость ферментации, газообразование и временную прогрессию метаболической активности.
 
+Данная работа направлена на создание воспроизводимой экспериментальной основы для изучения полевой модуляции биологических систем, с потенциальными применениями в биофизике, системной биологии и нефармакологической регуляции биологических процессов.
+
 Все экспериментальные материалы, протоколы и данные будут доступны через проект OSF и интегрированный репозиторий GitHub для обеспечения прозрачности и воспроизводимости.
 
 ---
@@ -71,15 +73,15 @@ All experimental materials, protocols, and data will be made available via the a
 |---------------------|-----------------|
 | **Model Organism / Модельный организм** | *Saccharomyces cerevisiae* (Dr. Oetker dry yeast, 7g, batch L329 M68) |
 | **Study Type / Тип исследования** | Randomized Controlled Experiment, double-blind / Рандомизированный контролируемый эксперимент, двойное слепое |
-| **Irradiation Duration / Длительность облучения** | 80 minutes (1h 20m) per session |
+| **Irradiation Duration / Длительность облучения** | 80 minutes (1h 20m) per session / 80 минут (1ч 20мин) за сессию |
 | **Channels / Каналы** | CH17, CH19, CH21, CH17+CH19 |
-| **Samples per Condition / Образцов на условие** | 5-10 independent samples |
+| **Samples per Condition / Образцов на условие** | 5-10 independent samples / 5-10 независимых образцов |
 | **Total Sample Size / Общий размер выборки** | N = 25-50 |
 | **Blinding / Ослепление** | Double-blind: coded identifiers, researchers unaware of conditions during analysis / Двойное слепое: кодированные идентификаторы |
 | **Randomization / Рандомизация** | Simple random assignment via RNG / Простая рандомизация через ГСЧ |
-| **Emitter Power / Мощность излучателя** | 60W avg / 144W peak (6 nodes, clean sine wave) |
+| **Emitter Power / Мощность излучателя** | 60W avg / 144W peak (6 nodes, clean sine wave / чистая синусоида) |
 | **Temperature / Температура** | 10 C (basement) / 18 C (lab) |
-| **Viability Assay / Анализ жизнеспособности** | Methylene blue staining (0.1% MB + 0.01% sodium citrate) |
+| **Viability Assay / Анализ жизнеспособности** | Methylene blue staining (0.1% MB + 0.01% sodium citrate) / Окрашивание метиленовым синим (0.1% МС + 0.01% цитрат натрия) |
 | **Logging Interval / Интервал логирования** | 1 measurement per minute (~80 per session) |
 | **OSF Registration / Регистрация OSF** | [osf.io/vxkum](https://osf.io/vxkum) (Apr 4, 2026) |
 | **Patent / Патент** | KZ 2025/1095.1 (Fractal Biomedical Hyperbolic Field System) |
@@ -168,35 +170,14 @@ If CH19 is associated with increased activity and CH17 exhibits a similar or int
 |---------------------|-----------------|
 | **Type / Тип** | Randomized, double-blind, controlled / Рандомизированный, двойное слепое, контролируемый |
 | **Groups / Группы** | Control, CH19, CH21, CH17, CH17+CH19 |
-| **Samples per Group / Образцов на группу** | 5-10 independent samples |
+| **Samples per Group / Образцов на группу** | 5-10 independent samples / 5-10 независимых образцов |
 | **Total N** | 25-50 |
-| **Blinding / Ослепление** | Coded sample identifiers; researchers unaware of conditions during analysis |
-| **Randomization / Рандомизация** | Simple random assignment via RNG at sample level |
+| **Blinding / Ослепление** | Coded sample identifiers; researchers unaware of conditions during analysis / Кодированные идентификаторы образцов; исследователи не знают условий во время анализа |
+| **Randomization / Рандомизация** | Simple random assignment via RNG at sample level / Простое случайное распределение через ГСЧ на уровне образца |
 
 ### Sample Groups / Группы Образцов
 
-```mermaid
-flowchart TB
-    subgraph Treatment[Treatment Groups / Группы Обработки]
-        CH17[CH17<br/>5-10 samples]
-        CH19[CH19<br/>5-10 samples]
-        CH21[CH21<br/>5-10 samples]
-        CH1719[CH17+CH19<br/>5-10 samples]
-    end
-    
-    subgraph Control[Control Group / Контроль]
-        C[Control<br/>5-10 samples]
-    end
-    
-    Treatment --> M[Measurements / Измерения]
-    Control --> M
-    M --> R[Results / Результаты]
-
-    style CH19 fill:#e74c3c,stroke:#333,color:#fff
-    style CH21 fill:#3498db,stroke:#333,color:#fff
-    style CH17 fill:#f39c12,stroke:#333,color:#fff
-    style CH1719 fill:#9b59b6,stroke:#333,color:#fff
-```
+![Diagram 1](charts/mermaid/root_1.png)
 
 ### Channel Predictions / Предсказания по Каналам
 
@@ -220,19 +201,19 @@ flowchart TB
 
 | Timepoint / Момент | Action / Действие |
 |--------------------|-------------------|
-| Before irradiation / До облучения | Photograph + microscopy |
-| Immediately after / Сразу после | Photograph + microscopy |
-| 3h post-exposure / 3ч после | Photograph |
-| 6h | Photograph |
-| 12h | Photograph + microscopy |
-| 24h | Photograph + microscopy + staining |
-| 48h | Photograph + microscopy + staining |
+| Before irradiation / До облучения | Photograph + microscopy / Фотография + микроскопия |
+| Immediately after / Сразу после | Photograph + microscopy / Фотография + микроскопия |
+| 3h post-exposure / 3ч после | Photograph / Фотография |
+| 6h | Photograph / Фотография |
+| 12h | Photograph + microscopy / Фотография + микроскопия |
+| 24h | Photograph + microscopy + staining / Фотография + микроскопия + окрашивание |
+| 48h | Photograph + microscopy + staining / Фотография + микроскопия + окрашивание |
 
 ### Viability Assay / Анализ Жизнеспособности
 
 **Methylene Blue Staining / Окрашивание Метиленовым Синим:**
-- 100 uL cell suspension + 100 uL methylene blue (0.1 mg/mL in 2% sodium citrate dihydrate)
-- 5 min incubation at room temperature
+- 100 uL cell suspension + 100 uL methylene blue (0.1 mg/mL in 2% sodium citrate dihydrate) / 100 мкл клеточной суспензии + 100 мкл метиленового синего (0.1 мг/мл в 2% дигидрате цитрата натрия)
+- 5 min incubation at room temperature / 5 мин инкубации при комнатной температуре
 - Dead cells stain blue (cannot reduce dye) / Мёртвые клетки окрашиваются синим
 - Live cells remain unstained (reduce dye) / Живые клетки не окрашиваются
 - Budding cells with slight staining count as live / Почкующиеся клетки с лёгкой окраской считать живыми
@@ -245,18 +226,18 @@ flowchart TB
 
 | Variable / Переменная | Measurement / Измерение |
 |----------------------|------------------------|
-| **Fermentation activity (rate)** | Observable gas production and turbidity changes over time / Газообразование и изменение мутности |
-| **Time to fermentation onset** | Time from start to visible signs of activity / Время до видимых признаков активности |
-| **Fermentation progression dynamics** | Temporal evolution across predefined timepoints / Временная эволюция по точкам наблюдения |
-| **Qualitative morphology (exploratory)** | Turbidity patterns, texture, growth characteristics / Паттерны мутности, текстура, рост |
+| **Fermentation activity (rate) / Активность ферментации (скорость)** | Observable gas production and turbidity changes over time / Газообразование и изменение мутности |
+| **Time to fermentation onset / Время до начала ферментации** | Time from start to visible signs of activity / Время до видимых признаков активности |
+| **Fermentation progression dynamics / Динамика прогрессии ферментации** | Temporal evolution across predefined timepoints / Временная эволюция по точкам наблюдения |
+| **Qualitative morphology (exploratory) / Качественная морфология (поисковая)** | Turbidity patterns, texture, growth characteristics / Паттерны мутности, текстура, рост |
 
 ### Derived Indices / Производные Индексы
 
 | Index / Индекс | Formula / Формула | Description / Описание |
 |----------------|-------------------|----------------------|
-| **FAI (Fermentation Activity Index)** | AUC_condition / AUC_control | Relative fermentation activity / Относительная активность |
-| **FDI (Fermentation Delay Index)** | lag_condition - lag_control | Lag phase difference / Разница лаг-фаз |
-| **FPI (Fermentation Progression Index)** | umax_condition / umax_control | Maximum growth rate ratio / Отношение максимальных скоростей |
+| **FAI (Fermentation Activity Index) / Индекс Активности Ферментации** | AUC_condition / AUC_control | Relative fermentation activity / Относительная активность |
+| **FDI (Fermentation Delay Index) / Индекс Задержки Ферментации** | lag_condition - lag_control | Lag phase difference / Разница лаг-фаз |
+| **FPI (Fermentation Progression Index) / Индекс Прогрессии Ферментации** | umax_condition / umax_control | Maximum growth rate ratio / Отношение максимальных скоростей |
 
 ### Control Variables / Контрольные Переменные
 
@@ -270,30 +251,18 @@ Temperature, medium composition, container type, time from preparation to exposu
 
 | Task / Задача | Tool / Инструмент | Rationale / Обоснование |
 |--------------|------------------|------------------------|
-| **Image denoising** | Cellpose3 one-click restore | Handles phone-through-eyepiece noise, blur, vignetting / Устраняет шум, размытие, виньетирование при съёмке через окуляр телефоном |
-| **Cell segmentation** | YeastSAM | 72% accuracy on budding cells vs 9-18% Cellpose3 / 72% точность на почкующихся клетках vs 9-18% Cellpose3 |
-| **Colony counting (macro)** | ImageJ/Fiji via PyImageJ | Validated for CFU, mature tool / Валидирован для КОЕ, зрелый инструмент |
-| **Turbidity (OD600 proxy)** | CIELAB regression (OpenCV) | R²=0.81 on S. cerevisiae with iPhone / R²=0.81 на S. cerevisiae с iPhone |
-| **Viability scoring** | OpenCV LAB b* channel | Per-setup calibration required / Требуется калибровка для каждой установки |
-| **Growth curves** | AMiGA (Gaussian Process) | Non-parametric, auto phase detection, publishable / Непараметрический, автодетекция фаз, пригоден для публикации |
-| **Statistics** | LME (statsmodels) + Tukey | More powerful than ANOVA for repeated measures / Мощнее ANOVA для повторных измерений |
-| **Annotation/QC** | napari + YeastSAM plugin | Native Python integration, human-in-the-loop / Нативная интеграция Python, человек-в-цикле |
+| **Image denoising / Подавление шума** | Cellpose3 one-click restore / Cellpose3 восстановление в один клик | Handles phone-through-eyepiece noise, blur, vignetting / Устраняет шум, размытие, виньетирование при съёмке через окуляр телефоном |
+| **Cell segmentation / Сегментация клеток** | YeastSAM | 72% accuracy on budding cells vs 9-18% Cellpose3 / 72% точность на почкующихся клетках vs 9-18% Cellpose3 |
+| **Colony counting (macro) / Подсчёт колоний (макро)** | ImageJ/Fiji via PyImageJ / ImageJ/Fiji через PyImageJ | Validated for CFU, mature tool / Валидирован для КОЕ, зрелый инструмент |
+| **Turbidity (OD600 proxy) / Мутность (OD600 прокси)** | CIELAB regression (OpenCV) / CIELAB регрессия (OpenCV) | R²=0.81 on S. cerevisiae with iPhone / R²=0.81 на S. cerevisiae с iPhone |
+| **Viability scoring / Оценка жизнеспособности** | OpenCV LAB b* channel / Канал b* LAB в OpenCV | Per-setup calibration required / Требуется калибровка для каждой установки |
+| **Growth curves / Кривые роста** | AMiGA (Gaussian Process) / AMiGA (Гауссовский процесс) | Non-parametric, auto phase detection, publishable / Непараметрический, автодетекция фаз, пригоден для публикации |
+| **Statistics / Статистика** | LME (statsmodels) + Tukey / LME (statsmodels) + Тьюки | More powerful than ANOVA for repeated measures / Мощнее ANOVA для повторных измерений |
+| **Annotation/QC / Аннотация/КК** | napari + YeastSAM plugin / napari + плагин YeastSAM | Native Python integration, human-in-the-loop / Нативная интеграция Python, человек-в-цикле |
 
 ### Pipeline Architecture / Архитектура Пайплайна
 
-```mermaid
-flowchart LR
-    A[Phone Camera<br/>Камера телефона] --> B[Cellpose3<br/>Restore/Denoise]
-    B --> C{Image Type}
-    C -->|Microscopy| D[YeastSAM<br/>Cell Segmentation]
-    C -->|Macro Petri| E[OpenCV<br/>Turbidity + Colony]
-    D --> F[Morphometry<br/>size, budding index]
-    E --> G[CIELAB -> OD600<br/>Viability HSV]
-    F --> H[AMiGA<br/>Growth Curves]
-    G --> H
-    H --> I[LME + ANOVA<br/>Statistics]
-    I --> J[Results<br/>Результаты]
-```
+![Diagram 2](charts/mermaid/root_2.png)
 
 ### Dependencies / Зависимости
 
@@ -318,32 +287,32 @@ pandas>=2.1.0            # data management
 
 ### Primary Analysis / Первичный Анализ
 
-Linear Mixed-Effects Model (LME) comparing fermentation dynamics across conditions:
+Linear Mixed-Effects Model (LME) comparing fermentation dynamics across conditions / Линейная модель со смешанными эффектами (LME), сравнивающая динамику ферментации по условиям:
 
 ```
 log(OD) ~ Condition * Timepoint + (1 | SampleID)
 ```
 
-- **Between-subject factor:** Exposure condition (Control, CH19, CH21, CH17, CH17+CH19)
-- **Within-subject factor:** Time (immediate, 3h, 6h, 12h, 24h, 48h)
-- **Post-hoc:** Tukey-adjusted pairwise comparisons
-- **Non-parametric alternative:** Kruskal-Wallis if ANOVA assumptions violated
-- **Significance threshold:** p < 0.05 (two-tailed)
-- **Effect sizes:** Cohen's d, partial eta squared
-- **Multiple comparisons:** Tukey HSD for conditions, Bonferroni for timepoints
+- **Between-subject factor / Межсубъектный фактор:** Exposure condition (Control, CH19, CH21, CH17, CH17+CH19) / Условие воздействия (Контроль, CH19, CH21, CH17, CH17+CH19)
+- **Within-subject factor / Внутрисубъектный фактор:** Time (immediate, 3h, 6h, 12h, 24h, 48h) / Время (сразу, 3ч, 6ч, 12ч, 24ч, 48ч)
+- **Post-hoc / Пост-хок:** Tukey-adjusted pairwise comparisons / Попарные сравнения с поправкой Тьюки
+- **Non-parametric alternative / Непараметрическая альтернатива:** Kruskal-Wallis if ANOVA assumptions violated / Краскела-Уоллиса, если допущения ANOVA нарушены
+- **Significance threshold / Порог значимости:** p < 0.05 (two-tailed) / p < 0.05 (двусторонний)
+- **Effect sizes / Размеры эффекта:** Cohen's d, partial eta squared / d Коэна, частичная эта-квадрат
+- **Multiple comparisons / Множественные сравнения:** Tukey HSD for conditions, Bonferroni for timepoints / Тьюки HSD для условий, Бонферрони для временных точек
 
 ### Success Criteria / Критерии Успеха
 
-- p < 0.05 on primary outcome
-- Moderate effect size (d >= 0.4)
-- Transfer to at least one secondary outcome
-- Subjective-only effects without quantitative confirmation = weak evidence
+- p < 0.05 on primary outcome / p < 0.05 по первичному показателю
+- Moderate effect size (d >= 0.4) / Умеренный размер эффекта (d >= 0.4)
+- Transfer to at least one secondary outcome / Перенос хотя бы на один вторичный показатель
+- Subjective-only effects without quantitative confirmation = weak evidence / Только субъективные эффекты без количественного подтверждения = слабое доказательство
 
 ### Data Exclusion / Исключение Данных
 
-- Contamination, preparation failure, or recording failure only
-- Outliers reported but not removed
-- Missing observations not imputed
+- Contamination, preparation failure, or recording failure only / Только контаминация, сбой подготовки или сбой записи
+- Outliers reported but not removed / Выбросы сообщаются, но не удаляются
+- Missing observations not imputed / Пропущенные наблюдения не импутируются
 
 ---
 
@@ -351,13 +320,13 @@ log(OD) ~ Condition * Timepoint + (1 | SampleID)
 
 | Equipment / Оборудование | Specification / Характеристики |
 |--------------------------|-------------------------------|
-| **Emitter System / Система излучателей** | 6 nodes, 60W avg / 144W peak, clean sine wave |
-| **Temperature Sensors / Датчики температуры** | DHT11 digital (temp + humidity), placed next to each sample |
-| **Light Sensors / Датчики света** | Photoresistors + ADC |
-| **Microscope / Микроскоп** | Light microscope with strong LED illumination |
-| **Data Center / Центр данных** | Linux-based microprocessor, 1 TB storage, auto-logging |
+| **Emitter System / Система излучателей** | 6 nodes, 60W avg / 144W peak, clean sine wave / 6 узлов, 60Вт средн. / 144Вт пик, чистая синусоида |
+| **Temperature Sensors / Датчики температуры** | DHT11 digital (temp + humidity), placed next to each sample / Цифровой DHT11 (темп. + влажность), размещён рядом с каждым образцом |
+| **Light Sensors / Датчики света** | Photoresistors + ADC / Фоторезисторы + АЦП |
+| **Microscope / Микроскоп** | Light microscope with strong LED illumination / Световой микроскоп с мощной светодиодной подсветкой |
+| **Data Center / Центр данных** | Linux-based microprocessor, 1 TB storage, auto-logging / Микропроцессор на базе Linux, 1 ТБ хранилища, автологирование |
 | **Containers / Ёмкости** | Petri dishes / Чашки Петри |
-| **Staining Supplies / Реактивы** | Methylene blue 0.1 mg/mL, sodium citrate dihydrate 2%, glass slides |
+| **Staining Supplies / Реактивы** | Methylene blue 0.1 mg/mL, sodium citrate dihydrate 2%, glass slides / Метиленовый синий 0.1 мг/мл, дигидрат цитрата натрия 2%, предметные стёкла |
 
 ---
 
@@ -365,12 +334,12 @@ log(OD) ~ Condition * Timepoint + (1 | SampleID)
 
 **Status / Статус:** Setup complete, microscopy calibrated / Установка завершена, микроскопия откалибрована
 
-- Emitter power successfully upgraded from 0.7W to 60W avg / 144W peak
-- Clean sine wave output confirmed (no noise/harmonics)
-- DHT11 sensors calibrated at 1-minute logging intervals
-- Yeast viability confirmed under microscope -- active cell division observed
-- Methylene blue staining protocol validated -- clear live/dead differentiation
-- Microscope photography workflow established (phone through eyepiece)
+- Emitter power successfully upgraded from 0.7W to 60W avg / 144W peak / Мощность излучателя успешно повышена с 0.7Вт до 60Вт средн. / 144Вт пик
+- Clean sine wave output confirmed (no noise/harmonics) / Подтверждён чистый синусоидальный выход (без шума/гармоник)
+- DHT11 sensors calibrated at 1-minute logging intervals / Датчики DHT11 откалиброваны с интервалом логирования 1 минута
+- Yeast viability confirmed under microscope -- active cell division observed / Жизнеспособность дрожжей подтверждена под микроскопом -- наблюдается активное деление клеток
+- Methylene blue staining protocol validated -- clear live/dead differentiation / Протокол окрашивания метиленовым синим валидирован -- чёткое различение живых/мёртвых клеток
+- Microscope photography workflow established (phone through eyepiece) / Рабочий процесс микроскопической фотосъёмки налажен (телефон через окуляр)
 
 **Irradiation experiments not yet started / Эксперименты по облучению ещё не начаты**
 
@@ -378,16 +347,7 @@ log(OD) ~ Condition * Timepoint + (1 | SampleID)
 
 ## TIMELINE / ВРЕМЕННАЯ ШКАЛА
 
-```mermaid
-flowchart LR
-    A["Mar 28\nTeam assembled, protocol defined\nКоманда собрана, протокол определён"] --> B["Mar 29\nEmitter upgrade 0.7W→60W/144W\nМодернизация излучателя"]
-    B --> C["Mar 31\nMicroscopy & staining validated\nМикроскопия и окрашивание валидированы"]
-    C --> D["Apr 4\nOSF preregistration submitted\nПредрегистрация OSF подана"]
-    D --> E["Apr 7\nOSF registration accepted\nРегистрация OSF принята"]
-    E --> F["Q2 2026\nIrradiation experiments begin\nНачало экспериментов по облучению"]
-    F --> G["Q3–Q4 2026\nData collection & CV analysis\nСбор данных и CV-анализ"]
-    G --> H["Q3–Q4 2026\nPublication preparation\nПодготовка публикации"]
-```
+![Diagram 3](charts/mermaid/root_3.png)
 
 ---
 
@@ -409,17 +369,7 @@ flowchart LR
 
 ## PATENT CONNECTION / СВЯЗЬ С ПАТЕНТОМ
 
-```mermaid
-flowchart TB
-    P[KZ 2025/1095.1<br/>Fractal Biomedical<br/>Hyperbolic Field System<br/>Substantive Exam] --> E[Hyperbolic Field<br/>Emitter Technology<br/>Технология Излучателей]
-    E --> S[This Study<br/>Saccharomyces cerevisiae<br/>Это Исследование]
-    E --> B[Blood Plasma Study<br/>Исследование Плазмы]
-    E --> A[Agricultural Study<br/>Исследование Растений]
-    E --> C[DAAT Crystal Study<br/>Исследование Кристаллов]
-
-    style P fill:#ffd93d,stroke:#333
-    style S fill:#4ecdc4,stroke:#333
-```
+![Diagram 1](charts/mermaid/retry_1.png)
 
 ---
 
@@ -440,9 +390,9 @@ flowchart TB
 
 ## KEYWORDS / КЛЮЧЕВЫЕ СЛОВА
 
-**Subjects / Области:** Biomedical Engineering, Medical Microbiology, Biophysics, Systems Biology, Food Microbiology, Environmental Microbiology, Microbiology, Life Sciences, Medical Sciences, Biochemistry
+**Subjects / Области:** Biomedical Engineering, Medical Microbiology, Biophysics, Systems Biology, Food Microbiology, Environmental Microbiology, Microbiology, Life Sciences, Medical Sciences, Biochemistry / Биомедицинская инженерия, медицинская микробиология, биофизика, системная биология, пищевая микробиология, экологическая микробиология, микробиология, науки о жизни, медицинские науки, биохимия
 
-**Tags / Теги:** biochronal processes, biological systems, biophysical fields, chrono-regulation, experimental biophysics, fermentation kinetics, field effects on biology, hyperbolic field, hyperbolic field modulation, non-classical interactions, saccharomyces cerevisiae, yeast fermentation
+**Tags / Теги:** biochronal processes, biological systems, biophysical fields, chrono-regulation, experimental biophysics, fermentation kinetics, field effects on biology, hyperbolic field, hyperbolic field modulation, non-classical interactions, saccharomyces cerevisiae, yeast fermentation / биохронные процессы, биологические системы, биофизические поля, хроно-регуляция, экспериментальная биофизика, кинетика ферментации, полевые эффекты на биологию, гиперболическое поле, модуляция гиперболическим полем, неклассические взаимодействия, saccharomyces cerevisiae, ферментация дрожжей
 
 ---
 
@@ -507,10 +457,10 @@ Hyperbolic_Field_SaccharomycesCerevisiae_Study/
 
 | Repository / Репозиторий | Direction / Направление | Link / Ссылка |
 |-------------------------|------------------------|---------------|
-| **Hyperbolic Field Blood Plasma Study** | Blood plasma coagulation (prior art) / Свёртываемость плазмы | [View / Просмотр](https://github.com/AdvancedScientificResearchProjects/Hyperbolic_Field_BloodPlasma_Study) |
-| **Hyperbolic Field Emitter Programs** | Emitter control software / ПО управления излучателями | [View / Просмотр](https://github.com/AdvancedScientificResearchProjects/Hyperbolic_Field_Emitter_Programs) |
-| **Hyperbolic Field Agricultural Study** | Plant & seed growth / Рост растений и семян | [View / Просмотр](https://github.com/AdvancedScientificResearchProjects/Hyperbolic_Field_Agricultural_Study) |
-| **Hyperbolic Field DAAT Crystal Study** | Crystal-human interaction / Взаимодействие кристалл-человек | [View / Просмотр](https://github.com/AdvancedScientificResearchProjects/Hyperbolic_Field_DAAT_Crystal_Study) |
+| **Hyperbolic Field Blood Plasma Study / Исследование Плазмы Крови** | Blood plasma coagulation (prior art) / Свёртываемость плазмы | [View / Просмотр](https://github.com/AdvancedScientificResearchProjects/Hyperbolic_Field_BloodPlasma_Study) |
+| **Hyperbolic Field Emitter Programs / Программы Излучателей** | Emitter control software / ПО управления излучателями | [View / Просмотр](https://github.com/AdvancedScientificResearchProjects/Hyperbolic_Field_Emitter_Programs) |
+| **Hyperbolic Field Agricultural Study / Сельскохозяйственное Исследование** | Plant & seed growth / Рост растений и семян | [View / Просмотр](https://github.com/AdvancedScientificResearchProjects/Hyperbolic_Field_Agricultural_Study) |
+| **Hyperbolic Field DAAT Crystal Study / Исследование Кристаллов DAAT** | Crystal-human interaction / Взаимодействие кристалл-человек | [View / Просмотр](https://github.com/AdvancedScientificResearchProjects/Hyperbolic_Field_DAAT_Crystal_Study) |
 | **ASRP.art** | Art & consciousness / Искусство и сознание | [View / Просмотр](https://github.com/AdvancedScientificResearchProjects/Axionetic_Sensing_Reactions_Platform_in_Art) |
 | **UAP Reverse Engineering** | UAP analysis / Анализ НЛО | [View / Просмотр](https://github.com/AdvancedScientificResearchProjects/UAP_Reverse_Engineering_Study) |
 
@@ -547,7 +497,7 @@ Hyperbolic_Field_SaccharomycesCerevisiae_Study/
 
 CC-BY-NC-ND 4.0 International
 
-This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. / Данная работа лицензирована по международной лицензии Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 (С указанием авторства -- Некоммерческая -- Без производных произведений).
 
 ---
 
