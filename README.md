@@ -404,18 +404,15 @@ Hyperbolic_Field_SaccharomycesCerevisiae_Study/
 |-- README.md
 |
 |-- data/
+|   |-- README.md                      # Data hub / Хаб данных
+|   |-- photos/                        # Flat photo set + manifest / Плоский набор + манифест
+|   |   |-- README.md
+|   |   |-- manifest.json
+|   |   |-- original/                  # HEIC + PNG / iPhone-native
+|   |   `-- jpg/                       # JPEG previews / Превью
 |   |-- equipment/                     # Equipment photos / Фото оборудования
-|   |   |-- msg063_photo_valeria_equipment.jpg
-|   |   |-- msg064_photo_valeria_equipment2.jpg
-|   |   `-- msg094_photo_dht11_sensor_layout.jpg
 |   |-- microscopy/                    # Microscopy photos / Фото микроскопии
-|   |   |-- msg174_photo_microscope_yeast_concentrate.jpg
-|   |   |-- msg185_photo_microscope1.jpg
-|   |   |-- msg186_photo_microscope2_reply185.jpg
 |   |   `-- staining/                  # Methylene blue staining / Окрашивание
-|   |       |-- msg188_photo_stained1.jpg
-|   |       |-- msg189_photo_stained2.jpg
-|   |       `-- msg190_photo_stained3_reply187.jpg
 |   |-- sample-ch17/                   # Channel 17 samples
 |   |   `-- photos/
 |   |-- sample-ch19/                   # Channel 19 samples
@@ -444,6 +441,8 @@ Hyperbolic_Field_SaccharomycesCerevisiae_Study/
     |-- statistics.py                  # LME + ANOVA (TBD)
     `-- visualize.py                   # Charts generation (TBD)
 ```
+
+See **[data/README.md](data/README.md)** — Data Hub indexing the flat photo set in `data/photos/` and the protocol-aligned analysis bins / Хаб данных, индексирующий плоский набор фотографий в `data/photos/` и протокол-выровненные аналитические корзины.
 
 ---
 
