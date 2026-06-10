@@ -1,5 +1,7 @@
 # Yeast Cell-Density Response to Hyperbolic-Field Exposure: Triangulated Image Analysis
 
+**🌐 Language / Язык:** **English** · [Русский](report_ru.md)
+
 **Date**: 2026-06-09
 **Dataset**: 990 microscopy fields (972 HEIC eyepiece captures + 18 PNG digital microscopy), *Saccharomyces cerevisiae*
 **Conditions**: control (CH0) + hyperbolic-field channels CH17 / CH19 / CH21; neutral (N) & nutrient (P) media; 3 experiment cycles; magnifications 10× and 100×
