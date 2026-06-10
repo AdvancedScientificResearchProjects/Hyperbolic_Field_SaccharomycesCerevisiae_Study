@@ -19,8 +19,8 @@
 
 ## Channel Mapping
 
-| Channel | Semantic | Plasma Study Precedent |
-|---------|----------|------------------------|
+| Channel | Semantic | Plasma Study Precedent (Blood Plasma Study, osf.io/8q42f) |
+|---------|----------|-----------------------------------------------------------|
 | **CH0 / control** | No field, baseline | Baseline (blood plasma study) |
 | **CH17** | Unknown effect (H7) | Not tested in plasma study |
 | **CH19** | Time acceleration | Fast clot formation + lysis in plasma |

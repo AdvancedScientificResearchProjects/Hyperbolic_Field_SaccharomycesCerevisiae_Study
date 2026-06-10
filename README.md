@@ -109,9 +109,9 @@ Different hyperbolic field configurations (CH19, CH21, CH17) will produce distin
 
 ### H3: Directional Channel Hypothesis / Направленная Канальная Гипотеза
 
-Based on prior observations in plasma systems, it is expected that CH19 exposure will be associated with increased fermentation activity (e.g., faster metabolic dynamics), while CH21 exposure will be associated with reduced or delayed activity relative to control samples.
+Based on prior observations in plasma systems (companion Blood Plasma Study, osf.io/8q42f, DOI 10.17605/OSF.IO/GWA9E), it is hypothesised that CH19 exposure will be associated with increased fermentation activity (e.g., faster metabolic dynamics — i.e. accelerated division rate / dynamics, NOT an increase in biomass or cell count; count ≈ control is the expected outcome for CH19; the count increase belongs to CH17), while CH21 exposure will be associated with reduced or delayed activity relative to control samples.
 
-На основе предыдущих наблюдений в плазменных системах ожидается, что воздействие CH19 будет ассоциировано с повышенной активностью ферментации, а CH21 -- со сниженной или замедленной активностью относительно контроля.
+На основе предыдущих наблюдений в плазменных системах (сопутствующее Исследование Плазмы Крови, osf.io/8q42f, DOI 10.17605/OSF.IO/GWA9E) гипотетически ожидается, что воздействие CH19 будет ассоциировано с повышенной активностью ферментации (т.е. ускоренным темпом деления / динамикой, НЕ увеличением биомассы или числа клеток; счёт ≈ контроль — ожидаемый результат для CH19; увеличение числа клеток относится к CH17), а CH21 — со сниженной или замедленной активностью относительно контроля.
 
 ### H4: Temporal Dynamics / Временная Динамика
 
@@ -508,7 +508,7 @@ See **[data/README.md](data/README.md)** — Data Hub indexing the flat photo se
 
 | Repository / Репозиторий | Direction / Направление | Link / Ссылка |
 |-------------------------|------------------------|---------------|
-| **Hyperbolic Field Blood Plasma Study / Исследование Плазмы Крови** | Blood plasma coagulation (prior art) / Свёртываемость плазмы | [View / Просмотр](https://github.com/AdvancedScientificResearchProjects/Hyperbolic_Field_BloodPlasma_Study) |
+| **Hyperbolic Field Blood Plasma Study / Исследование Плазмы Крови** | Blood plasma coagulation — **companion study sharing channels CH17/CH19/CH21**; provided the plasma-system precedents for the directional channel hypotheses in this repo. OSF: [osf.io/8q42f](https://osf.io/8q42f) · DOI: [10.17605/OSF.IO/GWA9E](https://doi.org/10.17605/OSF.IO/GWA9E) / Свёртываемость плазмы крови — **сопутствующее исследование, разделяющее каналы CH17/CH19/CH21**; источник прецедентов плазменных систем для направленных канальных гипотез настоящего репо. OSF: [osf.io/8q42f](https://osf.io/8q42f) · DOI: [10.17605/OSF.IO/GWA9E](https://doi.org/10.17605/OSF.IO/GWA9E) | [View / Просмотр](https://github.com/AdvancedScientificResearchProjects/Hyperbolic_Field_BloodPlasma_Study) |
 | **Hyperbolic Field Emitter Programs / Программы Излучателей** | Emitter control software / ПО управления излучателями | [View / Просмотр](https://github.com/AdvancedScientificResearchProjects/Hyperbolic_Field_Emitter_Programs) |
 | **Hyperbolic Field Agricultural Study / Сельскохозяйственное Исследование** | Plant & seed growth / Рост растений и семян | [View / Просмотр](https://github.com/AdvancedScientificResearchProjects/Hyperbolic_Field_Agricultural_Study) |
 | **Hyperbolic Field DAAT Crystal Study / Исследование Кристаллов DAAT** | Crystal-human interaction / Взаимодействие кристалл-человек | [View / Просмотр](https://github.com/AdvancedScientificResearchProjects/Hyperbolic_Field_DAAT_Crystal_Study) |

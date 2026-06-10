@@ -20,6 +20,7 @@ Consistency: ch17 top / ch21 bottom in cycles 2 AND 3 (the only independent repl
 ## Directional match to protocol hypothesis
 CH21 = "deceleration" -> lowest density (below control) ✓ consistent.
 CH17 = "unknown" -> turns out highest. CH19 = "acceleration" -> ~control (flat here).
+NOTE: "flat" count is the EXPECTED outcome for CH19 — its pre-registered role is division rate/dynamics, not count/biomass increase (that is CH17). See report_en.md §9.
 
 ## CAVEATS (this is PRELIMINARY, not proof)
 - Pseudoreplication: many fields, only ~2 biological replicates (N/P? replicate 1/2?) -> p-values (Kruskal p<1e-4) are inflated, NOT valid significance.
@@ -60,6 +61,7 @@ ch17 0.608 > ch0 0.580 ≈ ch19 0.572 > ch21 0.460. Same ordering, both cycles.
 Across BOTH magnifications × BOTH cycles × BOTH CV methods (count + occupancy) and 2 blind-LLM runs:
   CH17 = strongest (≈1.8× control by count) ; CH21 = below control ; CH19 ≈ control.
 Directional match to protocol: CH21 "deceleration" -> fewer cells (clean); CH17 (was "unknown") -> strongest enhancer; CH19 "acceleration" -> flat here.
+NOTE: "flat" count is the EXPECTED outcome for CH19 — its pre-registered role is division rate/dynamics, not count/biomass increase (that is CH17). See report_en.md §9.
 CV cell-count is far more discriminating than the LLM (which saturated at "high").
 
 ### Still preliminary

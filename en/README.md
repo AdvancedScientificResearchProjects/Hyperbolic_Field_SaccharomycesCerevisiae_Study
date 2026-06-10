@@ -222,7 +222,7 @@ Analysis of the first imaging batch (972 microscopy fields, cycles 001–003) us
 | CH19 | 118 | +5% | 2nd |
 | **CH21** | **88** | **−21%** | **4th (below control, every method)** |
 
-CH19 is not a null result: its effect is kinetic/morphological — cells are ~7% smaller in area (p ≈ 2.6×10⁻⁴ descriptive).
+CH19 is not a null result: its effect is kinetic/morphological — cells are ~7% smaller in area (p ≈ 2.6×10⁻⁴ descriptive). **CH19's pre-registered role (hypothesis) is to accelerate division rate / dynamics, NOT increase biomass or cell count** (count ≈ control is the expected outcome; the count increase is CH17). On this static endpoint batch cells are ~7% smaller in area but not more elongated and budding is flat — the division-rate hypothesis needs time-lapse / OD600 follow-up (see report §9).
 
 Per-field method agreement (Spearman): CV-count ↔ occupancy ρ = 0.88; occupancy ↔ LLM ρ = 0.89; CV-count ↔ LLM ρ = 0.81.
 
@@ -262,6 +262,18 @@ Source: `../results/SEMANTICS_CONFIRMED.md` (researcher disclosure, 2026-06-09).
 - **Zone белый** = 100× magnification (white objective ring)
 - **Zone жёлтый** = 10× magnification (yellow objective ring)
 - **Group S2-ch0-P1** = failed group (sample spilled / absent); journal dashes are correct; 0 photos
+
+---
+
+## Related Studies
+
+**Companion study — Hyperbolic Field Blood Plasma Study**
+
+The Blood Plasma Study is the direct predecessor to this repo and the source of the channel-direction precedents used in H3. It tested the same CH17/CH19/CH21 channel configuration on human blood plasma coagulation. CH19 produced fast clot formation + lysis (time-acceleration behaviour); CH21 produced dense, slow clot (time-deceleration). These observations grounded the directional hypotheses carried over to the yeast system.
+
+- GitHub: [Hyperbolic_Field_BloodPlasma_Study](https://github.com/AdvancedScientificResearchProjects/Hyperbolic_Field_BloodPlasma_Study)
+- OSF: [osf.io/8q42f](https://osf.io/8q42f)
+- DOI: [10.17605/OSF.IO/GWA9E](https://doi.org/10.17605/OSF.IO/GWA9E)
 
 ---
 
