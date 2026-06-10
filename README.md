@@ -8,8 +8,8 @@
 
 [![ASRP](https://img.shields.io/badge/ASRP-Research-blue)](https://github.com/AdvancedScientificResearchProjects)
 ![Language](https://img.shields.io/badge/Language-EN%2FRU-brightgreen)
-![Status](https://img.shields.io/badge/Status-Setup%20Complete-green)
-[![OSF](https://img.shields.io/badge/OSF-Registered-blue)](https://osf.io/Jgt3h)
+![Status](https://img.shields.io/badge/Status-Preliminary%20Results-orange)
+[![OSF](https://img.shields.io/badge/OSF-Registered-blue)](https://osf.io/vxkum)
 [![License](https://img.shields.io/badge/License-CC--BY--NC--ND%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 **Part of Advanced Scientific Research Projects (ASRP) Ecosystem**
@@ -24,6 +24,7 @@
 
 | Section / Раздел | Description / Описание | Status / Статус |
 |------------------|----------------------|-----------------|
+| [Key Results / Результаты](#key-results--ключевые-результаты) | CH17 +83%, CH21 −21%, CH19 kinetic / CH17 +83%, CH21 −21%, CH19 кинетика | Preliminary / Предварительно |
 | [Overview / Обзор](#overview--обзор) | Study objectives / Цели исследования | Defined / Определено |
 | [Key Metrics / Метрики](#key-metrics--ключевые-метрики) | Study parameters / Параметры | Defined / Определено |
 | [Hypotheses / Гипотезы](#hypotheses--гипотезы) | 11 registered hypotheses / 11 зарегистрированных гипотез | OSF Registered / Зарегистрировано на OSF |
@@ -218,6 +219,8 @@ If CH19 is associated with increased activity and CH17 exhibits a similar or int
 - Live cells remain unstained (reduce dye) / Живые клетки не окрашиваются
 - Budding cells with slight staining count as live / Почкующиеся клетки с лёгкой окраской считать живыми
 
+> **Note / Примечание:** This is the *registered* viability protocol. The **first analysed microscopy batch (2026-06-09, 990 total images / 990 изображений всего — 972 HEIC eyepiece microscopy fields / 972 поля микроскопии HEIC + 18 PNG digital microscopy / 18 PNG цифровой микроскопии) used NO viability stain** (researcher-confirmed; the blue cast in those images is medium/illumination) — so that batch reports cell **density only**, not live/dead viability. Staining / OD600 / fermentation outcomes remain pending. / Это *зарегистрированный* протокол. **Первый проанализированный пакет микроскопии (09.06.2026, 990 изображений всего / 990 total images — 972 поля микроскопии HEIC / 972 HEIC eyepiece microscopy fields + 18 PNG цифровой микроскопии / 18 PNG digital microscopy) окрашивание НЕ использовал** (подтверждено руководителем; синий оттенок — это среда/подсветка) — поэтому он отражает только **плотность клеток**, не жизнеспособность. Окрашивание / OD600 / ферментация — в работе.
+
 ---
 
 ## OUTCOME VARIABLES / ПЕРЕМЕННЫЕ ИСХОДА
@@ -330,18 +333,76 @@ log(OD) ~ Condition * Timepoint + (1 | SampleID)
 
 ---
 
+## KEY RESULTS / КЛЮЧЕВЫЕ РЕЗУЛЬТАТЫ
+
+**First imaging batch analysed (920 fields, LLM-scored subset / подмножество, оценённое LLM, cycles 001–003). A directional effect on cell density was found across three measurement methods (CV cell count, CV occupancy, blind LLM vision), reproducible in 2 of 3 cycles. CH17 is the strongest growth enhancer; CH21 falls below control (deceleration, as predicted); CH19 matches control by count (its hypothesised kinetic/morphological effect — thinner cells / faster division — is NOT supported on this endpoint batch; see report §9).**
+
+**Проанализирован первый пакет снимков (920 полей, подмножество, оценённое LLM / LLM-scored subset, циклы 001–003). Направленный эффект на плотность клеток подтверждён тремя методами измерения (CV-счёт, CV-занятость, слепой LLM-визион), воспроизводим в 2 из 3 циклов. CH17 — сильнейший стимулятор роста; CH21 — ниже контроля (замедление, как и предсказано); CH19 совпадает с контролем по числу клеток (его предполагаемый кинетический/морфологический эффект — более тонкие клетки / ускоренное деление — на этом эндпойнт-пакете НЕ подтверждается; см. §9 отчёта).**
+
+### COMPARATIVE RESULTS / СРАВНИТЕЛЬНЫЕ РЕЗУЛЬТАТЫ
+
+| Parameter / Параметр | Control / Контроль (CH0) | CH17 | CH19 | CH21 |
+|---|:---:|:---:|:---:|:---:|
+| **Cell count 100× / Счёт клеток 100×** | 112 | **205 (+83%)** | 118 (+5%) | **88 (−21%)** |
+| **vs control (×) / к контролю (×)** | 1.0× | **≈1.7–1.8×** | ≈1.05× | ≈0.79× |
+| **Occupancy rank (cyc 2–3) / Ранг занятости (циклы 2–3)** | mid / средн. | **1st / 1-й** | 2nd / 2-й | **4th / 4-й (lowest)** |
+| **Cell area 100× / Площадь клеток 100×** | baseline / база | −12.7% (p≈6e-11) | −7.6% (p≈6e-5) | −6.1% (p≈4e-3) |
+| **Cell shape (elongation) / Форма (вытянутость)** | baseline / база | n.s. | rounder, not thinner / круглее, не тоньше | n.s. |
+
+### KEY FINDINGS / КЛЮЧЕВЫЕ ВЫВОДЫ
+
+| Channel / Канал | Effect / Эффект | Interpretation / Интерпретация |
+|---|---|---|
+| **CH17** | +83% cell count, ≈1.7–1.8× control, densest in every method (cycles 2–3, 100×) / +83% к счёту, ≈1.7–1.8× контроля, самый плотный во всех методах (циклы 2–3, 100×) | Strongest growth enhancer / Сильнейший стимулятор роста |
+| **CH21** | −21% cell count, below control, sparsest in every method / −21% к счёту, ниже контроля, самый разреженный во всех методах | Deceleration, as predicted — but cycle 1 reverses this / Замедление, как и предсказано — но цикл 1 это обращает |
+| **CH19** | ≈ control by count (EXPECTED, not a null); cells ~7.6% smaller in area (p≈6e-5) but so are all field channels — and NOT more elongated (rounder if anything); budding flat / ≈ контроль по счёту (ОЖИДАЕМО, не нулевой); клетки ~7.6% меньше по площади (p≈6e-5), но это у всех каналов — и НЕ более вытянутые (скорее круглее); почкование без изменений | Thinner/faster-division hypothesis NOT supported on this endpoint batch — needs time-lapse + per-cell morphometry / Гипотеза «тоньше/быстрее делятся» на эндпойнт-пакете НЕ подтверждена — нужен time-lapse + поклеточная морфометрия |
+
+> **Caveat / Оговорка:** Preliminary — 2 of 3 cycles agree; cycle 1 reverses ordering; pseudoreplicated, descriptive p-values; needs ≥5 cycles. / Предварительно — 2 из 3 циклов согласуются; цикл 1 обращает порядок; псевдорепликация, описательные p-значения; нужно ≥5 циклов.
+
+**Full report / Полный отчёт:** [EN](reports/2026-06-09_density-analysis/report_en.md) | [RU](reports/2026-06-09_density-analysis/report_ru.md)
+
+---
+
 ## PRELIMINARY RESULTS / ПРЕДВАРИТЕЛЬНЫЕ РЕЗУЛЬТАТЫ
 
-**Status / Статус:** Setup complete, microscopy calibrated / Установка завершена, микроскопия откалибрована
+**Status / Статус:** First imaging batch analysed (990 total images / 990 изображений всего, cycles 001–003) / Проанализирован первый пакет снимков (990 изображений всего / 990 total images, циклы 001–003)
 
-- Emitter power successfully upgraded from 0.7W to 60W avg / 144W peak / Мощность излучателя успешно повышена с 0.7Вт до 60Вт средн. / 144Вт пик
-- Clean sine wave output confirmed (no noise/harmonics) / Подтверждён чистый синусоидальный выход (без шума/гармоник)
-- DHT11 sensors calibrated at 1-minute logging intervals / Датчики DHT11 откалиброваны с интервалом логирования 1 минута
-- Yeast viability confirmed under microscope -- active cell division observed / Жизнеспособность дрожжей подтверждена под микроскопом -- наблюдается активное деление клеток
-- Methylene blue staining protocol validated -- clear live/dead differentiation / Протокол окрашивания метиленовым синим валидирован -- чёткое различение живых/мёртвых клеток
-- Microscope photography workflow established (phone through eyepiece) / Рабочий процесс микроскопической фотосъёмки налажен (телефон через окуляр)
+**Key finding / Ключевой вывод:** A reproducible directional effect on cell density was found across three independent image-analysis methods (CV cell count, CV occupancy, blind LLM): **CH17 highest (~×1.6–1.8 vs control), CH21 below control, CH19 ≈ control.** Directionally consistent with the protocol prediction that CH21 decelerates division. / Воспроизводимый направленный эффект на плотность клеток по трём независимым методам анализа изображений: **CH17 — выше всех (~×1.6–1.8 к контролю), CH21 — ниже контроля, CH19 ≈ контроль.** Направленно согласуется с предсказанием протокола (CH21 замедляет деление).
 
-**Irradiation experiments not yet started / Эксперименты по облучению ещё не начаты**
+| Channel / Канал | Cell count 100× / Счёт 100× | vs control / к контролю |
+|---|:---:|:---:|
+| CH0 (control / контроль) | 112 | — |
+| **CH17** | **205** | **+83 %** |
+| CH19 | 118 | +5 % |
+| **CH21** | **88** | **−21 %** |
+
+![Cell count by channel](reports/2026-06-09_density-analysis/charts/chart_counts_100x.png)
+
+Per-field method agreement (Spearman): CV-count ↔ occupancy ρ=0.88; occupancy ↔ LLM ρ=0.89; CV-count ↔ LLM ρ=0.81 (at 100×). / Согласие методов по кадрам (Спирмен): счёт ↔ занятость ρ=0.88; занятость ↔ LLM ρ=0.89; счёт ↔ LLM ρ=0.81 (при 100×).
+
+> **Preliminary, not confirmatory / Предварительно, не доказательство:** 3 cycles only, cycle 1 disagrees, no scale bar; evidence is cross-method/-cycle consistency, not p-values. Needs ≥5 cycles. / Только 3 цикла, цикл 1 противоречит, нет масштабной линейки; доказательство — согласованность методов/циклов, не p-значения. Нужно ≥5 циклов.
+
+**Full report / Полный отчёт:** [EN](reports/2026-06-09_density-analysis/report_en.md) | [RU](reports/2026-06-09_density-analysis/report_ru.md)
+
+---
+
+## REPORTS / ОТЧЁТЫ
+
+| # | Report / Отчёт | Date / Дата | Status / Статус | EN | RU |
+|:---:|---|:---:|:---:|:---:|:---:|
+| 1 | Density response to field exposure (triangulated CV + LLM) / Отклик плотности на воздействие поля (CV + LLM) | 2026-06-09 | Complete / Завершено | [EN](reports/2026-06-09_density-analysis/report_en.md) | [RU](reports/2026-06-09_density-analysis/report_ru.md) |
+
+---
+
+## AI/ML ANALYSIS / AI-АНАЛИЗ
+
+The density signal was triangulated across three independent analysis stacks (blind LLM vision, deep-learning segmentation, and segmentation-free classical CV). Models and roles are stated openly below. / Сигнал плотности подтверждён тремя независимыми аналитическими стеками (слепой LLM-визион, сегментация на основе глубокого обучения и классический CV без сегментации). Модели и их роли указаны открыто ниже.
+
+| Provider / Провайдер | Model / Модель | Type / Тип | Status / Статус |
+|---|---|---|---|
+| **Anthropic** | Claude Opus 4.8 (claude-opus-4-8) | Blind vision density scoring / Слепая визуальная оценка плотности | Done (920 fields, LLM-scored subset / подмножество, оценённое LLM) / Готово (920 полей, подмножество, оценённое LLM / LLM-scored subset) |
+| **Cellpose** | cyto2 (cellpose 3.x) | CV cell segmentation / count — сегментация и подсчёт клеток | Done / Готово |
+| **Classical CV** | texture-occupancy + LoG blob | CV density (segmentation-free) / Плотность CV (без сегментации) | Done / Готово |
 
 ---
 
@@ -356,7 +417,7 @@ log(OD) ~ Condition * Timepoint + (1 | SampleID)
 | Field / Поле | Value / Значение |
 |--------------|------------------|
 | **Status / Статус** | Registered / Зарегистрировано |
-| **Project / Проект** | [osf.io/Jgt3h](https://osf.io/Jgt3h) |
+| **Project / Проект** | [osf.io/vxkum](https://osf.io/vxkum) |
 | **Registration / Регистрация** | [osf.io/vxkum](https://osf.io/vxkum) |
 | **Template / Шаблон** | OSF Preregistration |
 | **Registry / Реестр** | OSF Registries |
@@ -403,43 +464,34 @@ Hyperbolic_Field_SaccharomycesCerevisiae_Study/
 |
 |-- README.md
 |
-|-- data/
+|-- data/                              # Raw experimental data / Сырые данные
 |   |-- README.md                      # Data hub / Хаб данных
-|   |-- photos/                        # Flat photo set + manifest / Плоский набор + манифест
-|   |   |-- README.md
-|   |   |-- manifest.json
-|   |   |-- original/                  # HEIC + PNG / iPhone-native
-|   |   `-- jpg/                       # JPEG previews / Превью
-|   |-- equipment/                     # Equipment photos / Фото оборудования
-|   |-- microscopy/                    # Microscopy photos / Фото микроскопии
-|   |   `-- staining/                  # Methylene blue staining / Окрашивание
-|   |-- sample-ch17/                   # Channel 17 samples
-|   |   `-- photos/
-|   |-- sample-ch19/                   # Channel 19 samples
-|   |   `-- photos/
-|   |-- sample-ch21/                   # Channel 21 samples
-|   |   `-- photos/
-|   |-- sample-ch17-19/                # Combined CH17+19
-|   |   `-- photos/
-|   |-- control-01/                    # Control group
-|   |   `-- photos/
-|   |-- control-02/
-|   |   `-- photos/
-|   `-- control-03/
-|       `-- photos/
+|   `-- photos/                        # Flat photo set + manifest / Плоский набор + манифест
+|       |-- README.md
+|       |-- manifest.json
+|       |-- journal-mapping.csv   # Image -> channel/cycle map / Карта изображение -> канал/цикл
+|       |-- journal-mapping.json
+|       |-- journal-note.txt
+|       |-- original/                  # HEIC + PNG / iPhone-native
+|       `-- jpg/                       # JPEG previews / Превью
 |
-|-- charts/                            # Analysis charts / Графики
-|-- protocols/                         # Experiment protocols / Протоколы
+|-- results/                           # Analysis outputs / Результаты анализа
+|   |-- cv_analysis/                   # CV density: counts + occupancy / CV-плотность: счёт + занятость
+|   |   |-- DENSITY_SUMMARY.md
+|   |   |-- white_counts.csv           # cyto2 cell counts / счёт клеток cyto2
+|   |   |-- white_counts_morpho.csv    # morphometry (area, shape) / морфометрия
+|   |   `-- occupancy_full.csv         # segmentation-free occupancy / занятость без сегментации
+|   |-- llm_blind/                     # Blind LLM vision scoring / Слепая LLM-оценка
+|   `-- llm_full/                      # Full LLM analysis / Полный LLM-анализ
+|
 |-- reports/                           # Analysis reports / Отчёты
-`-- scripts/                           # CV pipeline scripts / Скрипты CV пайплайна
-    |-- ingest.py                      # Image loading + metadata (TBD)
-    |-- preprocess.py                  # Flatfield, denoise, crop (TBD)
-    |-- segment.py                     # YeastSAM cell segmentation (TBD)
-    |-- turbidity.py                   # CIELAB -> OD600 proxy (TBD)
-    |-- viability.py                   # Methylene blue scoring (TBD)
-    |-- growth_curves.py               # AMiGA fitting (TBD)
-    |-- statistics.py                  # LME + ANOVA (TBD)
-    `-- visualize.py                   # Charts generation (TBD)
+|   `-- 2026-06-09_density-analysis/   # Density report (EN/RU) + charts / Отчёт по плотности
+|
+|-- scripts/                           # CV pipeline scripts / Скрипты CV пайплайна
+|   `-- cv_analysis/                   # CV density analysis / Анализ плотности CV
+|
+|-- charts/                            # Mermaid diagrams / Mermaid-диаграммы
+`-- protocols/                         # Experiment protocols / Протоколы
 ```
 
 See **[data/README.md](data/README.md)** — Data Hub indexing the flat photo set in `data/photos/` and the protocol-aligned analysis bins / Хаб данных, индексирующий плоский набор фотографий в `data/photos/` и протокол-выровненные аналитические корзины.
@@ -502,23 +554,20 @@ This work is licensed under the Creative Commons Attribution-NonCommercial-NoDer
 
 <div align="center">
 
-**Last Updated / Последнее обновление:** April 2026
+**Last Updated / Последнее обновление:** June 2026
 
-**Status / Статус:** Setup Complete, Irradiation Pending / Установка завершена, облучение ожидается
+**Status / Статус:** Preliminary Results / Предварительные результаты — irradiation/fermentation track ongoing / трек облучения/ферментации продолжается
 
 </div>
 
 ---
 
-## TBD
+### Roadmap / Дорожная Карта
 
-- Petri dish photos from experiments / Фото чашек Петри из экспериментов
-- Irradiation experiment results / Результаты облучения
-- CV pipeline scripts implementation / Реализация скриптов CV пайплайна
-- OD600 calibration curve / Калибровочная кривая OD600
+The density batch is the first analysed slice of a larger preregistered programme. The full protocol (11 OSF-registered hypotheses, RCT N=25–50, double-blind) covers the irradiation/fermentation track that is still ongoing. Pending: additional cycles (≥5), staining/viability, OD600 calibration, and the full CV pipeline scripts. / Пакет плотности — первый проанализированный срез более широкой предзарегистрированной программы. Полный протокол (11 гипотез на OSF, РКИ N=25–50, двойное слепое) охватывает трек облучения/ферментации, который ещё продолжается. В работе: дополнительные циклы (≥5), окрашивание/жизнеспособность, калибровка OD600 и полные скрипты CV-пайплайна.
 
 ---
 
 ## NAVIGATION INDEX / НАВИГАЦИОННЫЙ ИНДЕКС
 
-[Overview / Обзор](#overview--обзор) · [Key Metrics / Метрики](#key-metrics--ключевые-метрики) · [Hypotheses / Гипотезы](#hypotheses--гипотезы) · [Experimental Design / Дизайн](#experimental-design--экспериментальный-дизайн) · [Outcome Variables / Переменные](#outcome-variables--переменные-исхода) · [Analysis Pipeline / Пайплайн](#analysis-pipeline--аналитический-пайплайн) · [Statistical Analysis / Статистика](#statistical-analysis--статистический-анализ) · [Equipment / Оборудование](#equipment--оборудование) · [Preliminary Results / Результаты](#preliminary-results--предварительные-результаты) · [Timeline / Сроки](#timeline--временная-шкала) · [OSF / Регистрация](#osf-preregistration--предварительная-регистрация-osf) · [Patent / Патент](#patent-connection--связь-с-патентом) · [Team / Команда](#research-team--команда) · [Keywords / Слова](#keywords--ключевые-слова) · [Data Structure / Структура](#data-structure--структура-данных) · [ASRP Ecosystem / Экосистема](#asrp-ecosystem--экосистема-asrp) · [Contact / Контакты](#contact-information--контактная-информация) · [License / Лицензия](#license--лицензия)
+[Key Results / Результаты](#key-results--ключевые-результаты) · [Overview / Обзор](#overview--обзор) · [Key Metrics / Метрики](#key-metrics--ключевые-метрики) · [Hypotheses / Гипотезы](#hypotheses--гипотезы) · [Experimental Design / Дизайн](#experimental-design--экспериментальный-дизайн) · [Outcome Variables / Переменные](#outcome-variables--переменные-исхода) · [Analysis Pipeline / Пайплайн](#analysis-pipeline--аналитический-пайплайн) · [Statistical Analysis / Статистика](#statistical-analysis--статистический-анализ) · [Equipment / Оборудование](#equipment--оборудование) · [Preliminary Results / Результаты](#preliminary-results--предварительные-результаты) · [AI/ML Analysis / AI-Анализ](#aiml-analysis--ai-анализ) · [Reports / Отчёты](#reports--отчёты) · [Timeline / Сроки](#timeline--временная-шкала) · [OSF / Регистрация](#osf-preregistration--предварительная-регистрация-osf) · [Patent / Патент](#patent-connection--связь-с-патентом) · [Team / Команда](#research-team--команда) · [Keywords / Слова](#keywords--ключевые-слова) · [Data Structure / Структура](#data-structure--структура-данных) · [ASRP Ecosystem / Экосистема](#asrp-ecosystem--экосистема-asrp) · [Contact / Контакты](#contact-information--контактная-информация) · [License / Лицензия](#license--лицензия)

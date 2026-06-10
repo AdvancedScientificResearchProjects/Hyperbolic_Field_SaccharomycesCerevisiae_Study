@@ -1,0 +1,218 @@
+[
+ {
+  "neutral": "img_001.jpg",
+  "img": "IMG_5460",
+  "channel": "0",
+  "exposure": "P",
+  "set": "3",
+  "zone": "жёлтый",
+  "focus": 7017.8
+ },
+ {
+  "neutral": "img_002.jpg",
+  "img": "IMG_5821",
+  "channel": "21",
+  "exposure": "N",
+  "set": "3",
+  "zone": "жёлтый",
+  "focus": 13127.2
+ },
+ {
+  "neutral": "img_003.jpg",
+  "img": "IMG_5270",
+  "channel": "21",
+  "exposure": "P",
+  "set": "2",
+  "zone": "жёлтый",
+  "focus": 9857.7
+ },
+ {
+  "neutral": "img_004.jpg",
+  "img": "IMG_5814",
+  "channel": "19",
+  "exposure": "N",
+  "set": "3",
+  "zone": "жёлтый",
+  "focus": 10258.3
+ },
+ {
+  "neutral": "img_005.jpg",
+  "img": "IMG_5170",
+  "channel": "17",
+  "exposure": "N",
+  "set": "2",
+  "zone": "жёлтый",
+  "focus": 16088.6
+ },
+ {
+  "neutral": "img_006.jpg",
+  "img": "IMG_5808",
+  "channel": "19",
+  "exposure": "N",
+  "set": "3",
+  "zone": "жёлтый",
+  "focus": 10387.9
+ },
+ {
+  "neutral": "img_007.jpg",
+  "img": "IMG_5417",
+  "channel": "21",
+  "exposure": "N",
+  "set": "2",
+  "zone": "жёлтый",
+  "focus": 9195.7
+ },
+ {
+  "neutral": "img_008.jpg",
+  "img": "IMG_5817",
+  "channel": "21",
+  "exposure": "N",
+  "set": "3",
+  "zone": "жёлтый",
+  "focus": 12464.5
+ },
+ {
+  "neutral": "img_009.jpg",
+  "img": "IMG_5181",
+  "channel": "17",
+  "exposure": "N",
+  "set": "2",
+  "zone": "жёлтый",
+  "focus": 16100.2
+ },
+ {
+  "neutral": "img_010.jpg",
+  "img": "IMG_5822",
+  "channel": "21",
+  "exposure": "N",
+  "set": "3",
+  "zone": "жёлтый",
+  "focus": 12911.6
+ },
+ {
+  "neutral": "img_011.jpg",
+  "img": "IMG_5375",
+  "channel": "19",
+  "exposure": "N",
+  "set": "2",
+  "zone": "жёлтый",
+  "focus": 10391.6
+ },
+ {
+  "neutral": "img_012.jpg",
+  "img": "IMG_5236",
+  "channel": "19",
+  "exposure": "P",
+  "set": "2",
+  "zone": "жёлтый",
+  "focus": 9116.4
+ },
+ {
+  "neutral": "img_013.jpg",
+  "img": "IMG_5180",
+  "channel": "17",
+  "exposure": "N",
+  "set": "2",
+  "zone": "жёлтый",
+  "focus": 15962.5
+ },
+ {
+  "neutral": "img_014.jpg",
+  "img": "IMG_5131",
+  "channel": "0",
+  "exposure": "N",
+  "set": "2",
+  "zone": "жёлтый",
+  "focus": 13022.7
+ },
+ {
+  "neutral": "img_015.jpg",
+  "img": "IMG_5171",
+  "channel": "17",
+  "exposure": "N",
+  "set": "2",
+  "zone": "жёлтый",
+  "focus": 15838.6
+ },
+ {
+  "neutral": "img_016.jpg",
+  "img": "IMG_5484",
+  "channel": "17",
+  "exposure": "P",
+  "set": "3",
+  "zone": "жёлтый",
+  "focus": 11520.3
+ },
+ {
+  "neutral": "img_017.jpg",
+  "img": "IMG_5608",
+  "channel": "0",
+  "exposure": "N",
+  "set": "3",
+  "zone": "жёлтый",
+  "focus": 11133.4
+ },
+ {
+  "neutral": "img_018.jpg",
+  "img": "IMG_5711",
+  "channel": "19",
+  "exposure": "P",
+  "set": "3",
+  "zone": "жёлтый",
+  "focus": 5661.5
+ },
+ {
+  "neutral": "img_019.jpg",
+  "img": "IMG_5136",
+  "channel": "0",
+  "exposure": "N",
+  "set": "2",
+  "zone": "жёлтый",
+  "focus": 12465.8
+ },
+ {
+  "neutral": "img_020.jpg",
+  "img": "IMG_5140",
+  "channel": "0",
+  "exposure": "N",
+  "set": "2",
+  "zone": "жёлтый",
+  "focus": 12618.7
+ },
+ {
+  "neutral": "img_021.jpg",
+  "img": "IMG_5818",
+  "channel": "21",
+  "exposure": "N",
+  "set": "3",
+  "zone": "жёлтый",
+  "focus": 12475.6
+ },
+ {
+  "neutral": "img_022.jpg",
+  "img": "IMG_5775",
+  "channel": "19",
+  "exposure": "N",
+  "set": "3",
+  "zone": "жёлтый",
+  "focus": 10821.5
+ },
+ {
+  "neutral": "img_023.jpg",
+  "img": "IMG_5129",
+  "channel": "0",
+  "exposure": "P",
+  "set": "2",
+  "zone": "жёлтый",
+  "focus": 7422.6
+ },
+ {
+  "neutral": "img_024.jpg",
+  "img": "IMG_5594",
+  "channel": "17",
+  "exposure": "N",
+  "set": "3",
+  "zone": "жёлтый",
+  "focus": 15474.4
+ }
+]

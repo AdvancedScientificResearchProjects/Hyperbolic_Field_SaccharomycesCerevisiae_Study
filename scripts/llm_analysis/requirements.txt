@@ -1,0 +1,11 @@
+# Blind LLM vision density scoring pipeline (Claude Opus 4.8 via Anthropic API).
+#
+# Run from the repo root:
+#   pip install -r scripts/llm_analysis/requirements.txt
+#   export ANTHROPIC_API_KEY=sk-ant-...
+#   python -m scripts.llm_analysis.run_single --provider anthropic --model claude-opus-4-8
+#
+langchain>=0.3
+langchain-anthropic>=0.3
+anthropic>=0.40
+python-dotenv>=1.0

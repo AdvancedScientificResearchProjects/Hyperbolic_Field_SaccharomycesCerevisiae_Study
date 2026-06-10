@@ -1,0 +1,524 @@
+{
+  "meta": {
+    "study": "Hyperbolic_Field_SaccharomycesCerevisiae_Study",
+    "pipeline": "blind LLM yeast-microscopy run 2",
+    "unblinding": "KEY.json joined on neutral filename",
+    "channels": {
+      "0": "CONTROL (no field)",
+      "17": "hyperbolic field",
+      "19": "hyperbolic field",
+      "21": "hyperbolic field"
+    },
+    "consensus_per_image": "3 independent blind analysts, neutral filename",
+    "staining_note": "All images: blue-cast field (methylene-blue type). Across all channels the majority read as bright/refractile (dye-excluding) cells with a minority of darker blue-stained cells; clean dead/viable separation NOT reliable at this magnification. No channel-specific staining difference apparent."
+  },
+  "joined_table": [
+    {
+      "neutral": "img_001.jpg",
+      "img": "IMG_5802",
+      "channel": "19",
+      "exposure": "N",
+      "set": "3",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2267,
+      "budding": "few",
+      "distribution": "mixed"
+    },
+    {
+      "neutral": "img_002.jpg",
+      "img": "IMG_5855",
+      "channel": "21",
+      "exposure": "N",
+      "set": "3",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2833,
+      "budding": "few",
+      "distribution": "even"
+    },
+    {
+      "neutral": "img_003.jpg",
+      "img": "IMG_5130",
+      "channel": "0",
+      "exposure": "N",
+      "set": "2",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2500,
+      "budding": "few",
+      "distribution": "mixed"
+    },
+    {
+      "neutral": "img_004.jpg",
+      "img": "IMG_5169",
+      "channel": "17",
+      "exposure": "N",
+      "set": "2",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 3667,
+      "budding": "few",
+      "distribution": "mixed"
+    },
+    {
+      "neutral": "img_005.jpg",
+      "img": "IMG_5524",
+      "channel": "0",
+      "exposure": "P",
+      "set": "3",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 1200,
+      "budding": "few",
+      "distribution": "mixed"
+    },
+    {
+      "neutral": "img_006.jpg",
+      "img": "IMG_5184",
+      "channel": "17",
+      "exposure": "N",
+      "set": "2",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2833,
+      "budding": "few",
+      "distribution": "even"
+    },
+    {
+      "neutral": "img_007.jpg",
+      "img": "IMG_5825",
+      "channel": "21",
+      "exposure": "N",
+      "set": "3",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2500,
+      "budding": "few",
+      "distribution": "mixed"
+    },
+    {
+      "neutral": "img_008.jpg",
+      "img": "IMG_5593",
+      "channel": "17",
+      "exposure": "N",
+      "set": "3",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2333,
+      "budding": "none",
+      "distribution": "even"
+    },
+    {
+      "neutral": "img_009.jpg",
+      "img": "IMG_5247",
+      "channel": "19",
+      "exposure": "P",
+      "set": "2",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2500,
+      "budding": "few",
+      "distribution": "clustered"
+    },
+    {
+      "neutral": "img_010.jpg",
+      "img": "IMG_5824",
+      "channel": "21",
+      "exposure": "N",
+      "set": "3",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2667,
+      "budding": "few",
+      "distribution": "even"
+    },
+    {
+      "neutral": "img_011.jpg",
+      "img": "IMG_5183",
+      "channel": "17",
+      "exposure": "N",
+      "set": "2",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 3667,
+      "budding": "few",
+      "distribution": "even"
+    },
+    {
+      "neutral": "img_012.jpg",
+      "img": "IMG_5128",
+      "channel": "0",
+      "exposure": "P",
+      "set": "2",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2333,
+      "budding": "few",
+      "distribution": "mixed"
+    },
+    {
+      "neutral": "img_013.jpg",
+      "img": "IMG_5139",
+      "channel": "0",
+      "exposure": "N",
+      "set": "2",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 3500,
+      "budding": "few",
+      "distribution": "mixed"
+    },
+    {
+      "neutral": "img_014.jpg",
+      "img": "IMG_5763",
+      "channel": "19",
+      "exposure": "N",
+      "set": "3",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2833,
+      "budding": "few",
+      "distribution": "mixed"
+    },
+    {
+      "neutral": "img_015.jpg",
+      "img": "IMG_5418",
+      "channel": "21",
+      "exposure": "N",
+      "set": "2",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 1300,
+      "budding": "few",
+      "distribution": "mixed"
+    },
+    {
+      "neutral": "img_016.jpg",
+      "img": "IMG_5478",
+      "channel": "17",
+      "exposure": "P",
+      "set": "3",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 1900,
+      "budding": "few",
+      "distribution": "even"
+    },
+    {
+      "neutral": "img_017.jpg",
+      "img": "IMG_5369",
+      "channel": "19",
+      "exposure": "N",
+      "set": "2",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2667,
+      "budding": "few",
+      "distribution": "even"
+    },
+    {
+      "neutral": "img_018.jpg",
+      "img": "IMG_5811",
+      "channel": "19",
+      "exposure": "N",
+      "set": "3",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2667,
+      "budding": "few",
+      "distribution": "mixed"
+    },
+    {
+      "neutral": "img_019.jpg",
+      "img": "IMG_5765",
+      "channel": "19",
+      "exposure": "N",
+      "set": "3",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 3000,
+      "budding": "few",
+      "distribution": "mixed"
+    },
+    {
+      "neutral": "img_020.jpg",
+      "img": "IMG_5272",
+      "channel": "21",
+      "exposure": "P",
+      "set": "2",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 1000,
+      "budding": "few",
+      "distribution": "mixed"
+    },
+    {
+      "neutral": "img_021.jpg",
+      "img": "IMG_5819",
+      "channel": "21",
+      "exposure": "N",
+      "set": "3",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 3000,
+      "budding": "few",
+      "distribution": "even"
+    },
+    {
+      "neutral": "img_022.jpg",
+      "img": "IMG_5596",
+      "channel": "0",
+      "exposure": "N",
+      "set": "3",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2167,
+      "budding": "few",
+      "distribution": "mixed"
+    },
+    {
+      "neutral": "img_023.jpg",
+      "img": "IMG_5607",
+      "channel": "0",
+      "exposure": "N",
+      "set": "3",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2500,
+      "budding": "none",
+      "distribution": "even"
+    },
+    {
+      "neutral": "img_024.jpg",
+      "img": "IMG_5185",
+      "channel": "17",
+      "exposure": "N",
+      "set": "2",
+      "zone": "жёлтый",
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 3333,
+      "budding": "none",
+      "distribution": "clustered"
+    }
+  ],
+  "per_channel": {
+    "0": {
+      "channel": "0",
+      "role": "CONTROL",
+      "n_images": 6,
+      "cell_mean_mean": 2366.7,
+      "cell_mean_median": 2416.5,
+      "cell_mean_min": 1200,
+      "cell_mean_max": 3500,
+      "cell_mean_sd": 737.8,
+      "density_counts": {
+        "high": 6
+      },
+      "budding_counts": {
+        "few": 5,
+        "none": 1
+      },
+      "distribution_counts": {
+        "mixed": 5,
+        "even": 1
+      },
+      "cell_means": [
+        1200,
+        2167,
+        2333,
+        2500,
+        2500,
+        3500
+      ],
+      "images": [
+        "img_003.jpg",
+        "img_005.jpg",
+        "img_012.jpg",
+        "img_013.jpg",
+        "img_022.jpg",
+        "img_023.jpg"
+      ]
+    },
+    "17": {
+      "channel": "17",
+      "role": "FIELD",
+      "n_images": 6,
+      "cell_mean_mean": 2955.5,
+      "cell_mean_median": 3083.0,
+      "cell_mean_min": 1900,
+      "cell_mean_max": 3667,
+      "cell_mean_sd": 731.0,
+      "density_counts": {
+        "high": 6
+      },
+      "budding_counts": {
+        "few": 4,
+        "none": 2
+      },
+      "distribution_counts": {
+        "mixed": 1,
+        "even": 4,
+        "clustered": 1
+      },
+      "cell_means": [
+        1900,
+        2333,
+        2833,
+        3333,
+        3667,
+        3667
+      ],
+      "images": [
+        "img_004.jpg",
+        "img_006.jpg",
+        "img_008.jpg",
+        "img_011.jpg",
+        "img_016.jpg",
+        "img_024.jpg"
+      ]
+    },
+    "19": {
+      "channel": "19",
+      "role": "FIELD",
+      "n_images": 6,
+      "cell_mean_mean": 2655.7,
+      "cell_mean_median": 2667.0,
+      "cell_mean_min": 2267,
+      "cell_mean_max": 3000,
+      "cell_mean_sd": 255.2,
+      "density_counts": {
+        "high": 6
+      },
+      "budding_counts": {
+        "few": 6
+      },
+      "distribution_counts": {
+        "mixed": 4,
+        "clustered": 1,
+        "even": 1
+      },
+      "cell_means": [
+        2267,
+        2500,
+        2667,
+        2667,
+        2833,
+        3000
+      ],
+      "images": [
+        "img_001.jpg",
+        "img_009.jpg",
+        "img_014.jpg",
+        "img_017.jpg",
+        "img_018.jpg",
+        "img_019.jpg"
+      ]
+    },
+    "21": {
+      "channel": "21",
+      "role": "FIELD",
+      "n_images": 6,
+      "cell_mean_mean": 2216.7,
+      "cell_mean_median": 2583.5,
+      "cell_mean_min": 1000,
+      "cell_mean_max": 3000,
+      "cell_mean_sd": 848.2,
+      "density_counts": {
+        "high": 6
+      },
+      "budding_counts": {
+        "few": 6
+      },
+      "distribution_counts": {
+        "even": 3,
+        "mixed": 3
+      },
+      "cell_means": [
+        1000,
+        1300,
+        2500,
+        2667,
+        2833,
+        3000
+      ],
+      "images": [
+        "img_002.jpg",
+        "img_007.jpg",
+        "img_010.jpg",
+        "img_015.jpg",
+        "img_020.jpg",
+        "img_021.jpg"
+      ]
+    }
+  },
+  "field_pooled_17_19_21": {
+    "n_images": 18,
+    "cell_mean_mean": 2609.3,
+    "cell_mean_median": 2667.0,
+    "distribution_counts": {
+      "mixed": 8,
+      "even": 8,
+      "clustered": 2
+    },
+    "budding_counts": {
+      "few": 16,
+      "none": 2
+    },
+    "density_counts": {
+      "high": 18
+    }
+  },
+  "control_0": {
+    "cell_means": [
+      1200,
+      2167,
+      2333,
+      2500,
+      2500,
+      3500
+    ],
+    "mean": 2366.7
+  },
+  "comparison": {
+    "control_mean_cells": 2366.7,
+    "field_pooled_mean_cells": 2609.3,
+    "field_minus_control": 242.6,
+    "density": "ALL 24 images = high (3/3 agree). Zero discrimination on density across any channel.",
+    "clustering": "clustered images: ch17=1 (img_024), ch19=1 (img_009), ch0=0, ch21=0. The 2 clustered fields are both field channels, but n=2/24 -> within noise; \"even\" dominates ch17/ch21, \"mixed\" dominates ch0/ch19.",
+    "budding": "budding=none: ch0=1, ch17=2, ch19=0, ch21=0 (rest \"few\" everywhere). No field-driven INCREASE in budding; non-budding fields sit in control+ch17."
+  },
+  "caveats": [
+    "n=6 images per channel (ch0 n=6, ch17 n=6, ch19 n=6, ch21 n=6); preliminary run only.",
+    "No biological-replicate structure: images are technical fields, not independent biological replicates -> pseudoreplication; per-image values are not independent.",
+    "Blind LLM density is ordinal (low/med/high), not absolute counts; here it is fully saturated (all high) so density carries no information.",
+    "cell_mean is an LLM eyeball estimate averaged over 3 analysts, not a validated hemocytometer/automated count.",
+    "Viability deferred: stain identity unconfirmed (presumed methylene-blue type); dead/viable split not reliably resolvable -> no viability claim.",
+    "Mix of N and P exposures within channels not controlled for; zone uniformly \"жёлтый\".",
+    "No statistical test performed; differences below are descriptive only and within noise for this n."
+  ]
+}

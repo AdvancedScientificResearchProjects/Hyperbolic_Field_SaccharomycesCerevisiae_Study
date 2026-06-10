@@ -1,0 +1,82 @@
+group_id,set,channel,exposure,replicate,zone,img_start,img_end,img_count,source,confidence,notes
+S1-ch0-N2,1,0,N,2,—,4801,4806,6,pageA/pageB,high,"Top block, channel 0 (Cyrillic О), header time 20:11. Label 'О N2' at frame 4804. Contiguous 4801–4806; 4804 last digit retraced but unambiguous by sequence."
+S1-ch0-N1,1,0,N,1,—,4807,4812,6,pageA/pageB,high,"Top block, channel О=0. Label 'О N1' at frame 4810 (minor correction mark between О and N1). Contiguous 4807–4812."
+S1-ch0-P2,1,0,P,2,—,4813,4818,6,pageA/pageB,high,"Top block, channel О=0. Label 'О P2' at frame 4816. Contiguous 4813–4818."
+S1-ch0-P1,1,0,P,1,—,4819,4825,6,pageA/pageB,high,"Top block, channel О=0. Label 'О P1' at frame 4822. Written extent 4819–4825; 4819 is STRUCK-THROUGH (treat as cancelled); 4824 struck then rewritten as 4824 (in-place correction). Effective non-struck values 4820–4825; img_start kept at written column start 4819 per convention. Known mark: '4819 struck'."
+S1-ch17-N1,1,17,N,1,—,4826,4837,12,pageA/pageB,high,"Channel 17 block, header time 20:15. Label '17 N1'. Two written rows 4826–4831 / 4832–4837, contiguous. All 12 digits clear."
+S1-ch17-P1-blk1,1,17,P,1,—,4838,4847,9,pageA/pageB,high,"17 P1, BLOCK 1 of 2 (group is non-contiguous; emitted as separate range; id suffix -blk1 disambiguates from -blk2). Range 4838–4847. Annotations: 4840 mark on last digit; 4841 & 4842 carry asterisk/marks above (numbers intact); 4847 STRUCK-THROUGH acting as block divider (ellipsis drawn between 4845 and 4847, 4846 implied), excluded from the 9 logged frames; IMG_4847.HEIC is present on disk (struck in journal but file exists, like an unlogged frame)."
+S1-ch17-P2,1,17,P,2,—,4848,4869,20,pageA/pageB,high,"Label '17 P2'. Range 4848–4869, 20 logged frames after two journal skips at 4857 and 4868 (known mark: 'skips 4857 and 4868'). IMG_4857 is ABSENT on disk; IMG_4868 IS PRESENT on disk (4866–4870 contiguous) but the journal skipped logging it, so it stays unmapped like other present-but-unlogged frames (4847/5090/5142/5657). Count 20 is correct. Frames 4852 and 4853 circled together."
+S1-ch17-N2,1,17,N,2,—,4870,4883,14,pageA/pageB,high,"Label '17 N2'. Two written rows 4870–4876 / 4877–4883, contiguous. Numerically out of sequence vs 17 P1/P2 but written this way in journal."
+S1-ch19-P1,1,19,P,1,—,4884,4895,12,pageA/pageB,high,"Two lines 4884–4889 / 4890–4895, contiguous 12 numbers. Channel-19 start under header 20:42."
+S1-ch19-P2,1,19,P,2,—,4896,4907,12,pageA/pageB,high,"Lines 4896–4901 / 4902–4907, 12 numbers. 4900 bold/retraced but unambiguously in sequence (4899→4900→4901)."
+S1-ch19-N1,1,19,N,1,—,4908,4919,12,pageA/pageB,high,"Lines 4908–4913 / 4914–4919, 12 numbers. 4910 has a light self-correction mark on final digit but reads 4910 in sequence."
+S1-ch19-N2,1,19,N,2,—,4920,4931,12,pageA/pageB,high,"Lines 4920–4925 / 4926–4931, 12 numbers. Channel-19 end at 4931; contiguous handoff to channel 21 (4931→4932)."
+S1-ch21-P1,1,21,P,1,—,4932,4944,12,pageA/pageB,med,"Endpoint 4944 confirmed by contiguity into 21 P2 (4945). SKIP 4941 confirmed by disk: IMG_4941 absent (4940→4942 on disk). Range 4932–4944 with 4941 absent = 12 photos. Header 21:00. FLAG: disk-confirmed skip."
+S1-ch21-P2,1,21,P,2,—,4945,4956,12,pageA/pageB,high,"Lines 4945–4950 / 4951–4956, 12 numbers. Contiguous with 21 P1 (4944→4945)."
+S1-ch21-N1,1,21,N,1,—,4957,4968,12,pageA/pageB,high,"Lines 4957–4962 / 4963–4968, 12 numbers. Contiguous with 21 P2 (4956→4957)."
+S1-ch21-N2,1,21,N,2,—,4969,4981,12,pageA/pageB,high,"SKIPS 4971 per journal structure: line1 4969 4970 4972 4973 4974 4975 (jumps 4970→4972), line2 4976–4981. 11 numbers, range 4969–4981 with 4971 absent. End value 4976 confirmed by sequence."
+S1-ch17-P1-blk2,1,17,P,1,—,4983,4987,5,pageA/pageB,high,"17 P1, BLOCK 2 of 2 (same group, non-contiguous continuation after gap; id suffix -blk2 disambiguates from -blk1). Frames 4983 4984 4985 4986 4987, followed by heavily scribbled/struck-out ~4988 (cancelled; 4988 is a microscopy PNG on disk, not part of this block). Known mark: 'two blocks 4838–4847 then 4983–4987'."
+S2-ch17-P1-b,2,17,P,1,белый,5070,5079,10,pageC,high,"Row1 '2 17 P1' col1. Clear; top anchor of table."
+S2-ch17-P1-y,2,17,P,1,жёлтый,5080,5089,10,pageC,high,"Row1 col2 (header «жёлтый»). Clear."
+S2-ch17-P2-y,2,17,P,2,жёлтый,5091,5099,9,pageC,high,"Row2 col2. Range 5091–5099. Gap 5090 before = documented unlogged single frame."
+S2-ch17-P2-b,2,17,P,2,белый,5100,5109,10,pageC,med,"Row2 '2 17 P2' col1. Range 5100–5109. End written literally '51009' (5 digits, impossible for band 5070–5419); read as slip for 5109 — matches start 5100 and contiguity (next белый is 5110 at row4 after blank row3). FLAG: end-digit slip, image-confirmed."
+S2-ch0-P2-b,2,0,P,2,белый,5110,5120,11,pageC,high,"Row4 '2 0 P2' col1. Range 5110–5120 clear; first белый below blank row3."
+S2-ch0-P2-y,2,0,P,2,жёлтый,5121,5129,9,pageC,high,"Row4 col2. Range 5121–5129 clear; contiguous 5120→5121."
+S2-ch0-N1-y,2,0,N,1,жёлтый,5130,5141,12,pageC,high,"Row7 col2. Range 5130–5141. 5142 is a documented unlogged single frame; end=5141 then белый starts 5143 — contiguity confirms 5141."
+S2-ch0-N1-b,2,0,N,1,белый,5143,5153,11,pageC,high,"Row7 '2 0 N1' col1. Range 5143–5153; numerically lower than row6 (block boundary). Gap 5142 before = documented unlogged single frame."
+S2-ch17-N1-b,2,17,N,1,белый,5154,5166,13,pageC,high,"Row5 '2 17 N1' col1. Range 5154–5166 clear."
+S2-ch17-N1-y,2,17,N,1,жёлтый,5167,5179,13,pageC,med,"Row5 col2. Range 5167–5179. Start '5167' has bold/overwritten middle digits ('67' inked over); end 5179 clear. Contiguous with col1 5166→5167. FLAG: overwritten start."
+S2-ch17-N2-y,2,17,N,2,жёлтый,5180,5189,10,pageC,high,"Row6 col2. Range 5180–5189; жёлтый numerically below белый for this group (yellow shot first). Contiguous 5189→5190."
+S2-ch17-N2-b,2,17,N,2,белый,5190,5201,12,pageC,high,"Row6 '2 17 N2' col1. Range 5190–5201 (not 5196)."
+S2-ch0-N2-b,2,0,N,2,белый,5202,5218,17,pageC,high,"Row8 '2 0 N2' col1. Range 5202–5218 clear."
+S2-ch0-N2-y,2,0,N,2,жёлтый,5219,5232,14,pageC,high,"Row8 col2. Range 5219–5232; contiguous 5218→5219."
+S2-ch19-P1-y,2,19,P,1,жёлтый,5235,5251,17,pageC,high,"Row9 col2. Range 5235–5251; жёлтый below белый (yellow first); contiguous 5251→5252."
+S2-ch19-P1-b,2,19,P,1,белый,5252,5265,14,pageC,high,"Row9 '2 19 P1' col1. Range 5252–5265. Gap 5233–5234 before block = normal channel-block boundary."
+S2-ch21-P1-y,2,21,P,1,жёлтый,5266,5273,8,pageC,high,"Row11 col2. Range 5266–5273; жёлтый below белый; contiguous 5273→5274."
+S2-ch21-P1-b,2,21,P,1,белый,5274,5283,10,pageC,high,"Row11 '2 21 P1' col1. Range 5274–5283; numerically below row10 (group ordering, not strictly monotonic across channels)."
+S2-ch19-P2-b,2,19,P,2,белый,5284,5295,12,pageC,high,"Row10 '2 19 P2' col1. Range 5284–5295 clear."
+S2-ch19-P2-y,2,19,P,2,жёлтый,5296,5307,12,pageC,high,"Row10 col2. Range 5296–5307; contiguous 5295→5296."
+S2-ch21-P2-y,2,21,P,2,жёлтый,5308,5318,11,pageC,high,"Row12 col2. Range 5308–5318 (not overwritten); жёлтый below белый."
+S2-ch21-P2-b,2,21,P,2,белый,5319,5327,9,pageC,low,"Row12 '2 21 P2' col1. BOLD-OVERWRITTEN белый cell (one of 2 genuinely bold белый cells in set2 ch21; bold cells are 21 P2 here and 21 N1, while 21 N2 is regular weight). Start: '53'+bold'19' read as 5319, pinned by col2 5318→5319 contiguity. End: journal end-digit reads '5328' but IMG_5328 is ABSENT on disk (5327 present, then 5328–5333 gap, then N1 жёлтый 5334), so disk-corrected to 5327. FLAG: bold-overwritten, handwriting unresolved — re-photograph recommended."
+S2-ch21-N1-y,2,21,N,1,жёлтый,5334,5344,11,pageC,high,"Row13 col2. Range 5334–5344 (leading digit 3, not 2); жёлтый below белый."
+S2-ch21-N1-b,2,21,N,1,белый,5345,5356,12,pageC,low,"Row13 '2 21 N1' col1. BOLD-OVERWRITTEN белый cell (2nd of the 2 genuinely bold белый cells in set2 ch21). BOTH ends inked over: start '53'+bold'45' (candidate 5345, pinned by col2 5344→5345), end '53'+bold'56' (candidate 5356). Disk 5343–5360 is fully contiguous so cannot independently arbitrate the endpoints; reading rests on the bold digits and neighbour contiguity. Gap 5329–5333 before = normal boundary. FLAG: bold-overwritten both ends, handwriting unresolved — re-photograph recommended."
+S2-ch19-N1-y,2,19,N,1,жёлтый,5357,5364,8,pageC,high,"Row15 col2. Range 5357–5364; жёлтый below белый."
+S2-ch19-N2-y,2,19,N,2,жёлтый,5365,5375,11,pageC,high,"Row16 col2. Range 5365–5375; жёлтый below белый anchor; last entry in table; contiguous 5375→5376."
+S2-ch19-N2-b,2,19,N,2,белый,5376,5387,12,pageC,high,"Row16 '2 19 N2' col1 = RESEARCHER-CONFIRMED ANCHOR. Range 5376–5387 (trailing '87' bold) matches anchor exactly; pins N-block alignment."
+S2-ch19-N1-b,2,19,N,1,белый,5388,5398,11,pageC,high,"Row15 '2 19 N1' col1. Range 5388–5398 clear."
+S2-ch21-N2-b,2,21,N,2,белый,5399,5411,13,pageC,med,"Row14 '2 21 N2' col1. Range 5399–5411. End '5411' (thin final 1); alternate read 5417 considered but col2 starts 5412 so contiguity confirms 5411. Regular weight (not bold). FLAG: thin end digit, contiguity-resolved."
+S2-ch21-N2-y,2,21,N,2,жёлтый,5412,5419,8,pageC,high,"Row14 col2. Range 5412–5419; contiguous 5411→5412. 5419 = max of set2 band."
+S2-ch0-P1-b,2,0,P,1,белый,0,0,0,pageC,high,"Row3 '2 0 P1' col1 BLANK (no photos). Confirmed by larger vertical gap and 15 value-lines for 16 labels in col1. img 0/0 = no data, NOT a reading."
+S2-ch0-P1-y,2,0,P,1,жёлтый,0,0,0,pageC,high,"Row3 col2 BLANK. Empty cell between 5091–5099 and 5121–5129. img 0/0 = no data."
+S3-ch17-P2-y,3,17,P,2,жёлтый,5420,5430,11,pageC,high,"Row2 col2. Bold/large hand; start digits read '5 4 2 0' at 6x zoom = 5420 (set3 band start), confirmed not 5490."
+S3-ch17-P2-b,3,17,P,2,белый,5431,5444,14,pageC,high,"Row2 col1. Contiguous with row2 жёлтый end 5430."
+S3-ch0-P2-b,3,0,P,2,белый,5445,5452,8,pageC,high,"Row4 col1. Label '3 0 P2' = set3 channel 0."
+S3-ch0-P2-y,3,0,P,2,жёлтый,5453,5461,9,pageC,high,Row4 col2.
+S3-ch17-P1-y,3,17,P,1,жёлтый,5462,5489,28,pageC,high,Row1 col2.
+S3-ch17-P1-b,3,17,P,1,белый,5490,5502,13,pageC,high,"Row1 col1. Researcher anchor: 3 17 P1 белый = 5490–5502 confirmed from image (not 6502)."
+S3-ch0-P1-b,3,0,P,1,белый,5503,5514,12,pageC,high,"Row3 col1. Label '3 0 P1' = set3 channel 0 (control), not channel 30."
+S3-ch0-P1-y,3,0,P,1,жёлтый,5515,5526,12,pageC,high,Row3 col2.
+S3-ch17-N1-y,3,17,N,1,жёлтый,5527,5541,15,pageC,high,Row5 col2.
+S3-ch17-N1-b,3,17,N,1,белый,5542,5557,16,pageC,high,"Row5 col1. Leading dash mark before 5542. End digit confirmed '7' at 7x zoom = 5557; chains to row6 col1 start 5558."
+S3-ch17-N2-b,3,17,N,2,белый,5558,5581,24,pageC,low,"Row6 col1. DISPUTED end digit: one reading gave 5582, another 5581. Disk 5557–5595 is fully contiguous so disk cannot arbitrate. RESOLVED to 5581 to give a clean 0-overlap partition with row6 col2 жёлтый (starts 5582): b=5558–5581, y=5582–5594 tile the contiguous block exactly. Previously recorded 5582, which forced a 1-frame overlap; now eliminated. FLAG: disputed end digit, handwriting unresolved — re-photograph recommended."
+S3-ch17-N2-y,3,17,N,2,жёлтый,5582,5594,13,pageC,high,"Row6 col2. Start '5582' has a clear printed flat-bottom '2' at 6x zoom. Shares 5582 with row6 col1 end (1-photo overlap)."
+S3-ch0-N1-y,3,0,N,1,жёлтый,5595,5608,14,pageC,high,Row7 col2.
+S3-ch0-N1-b,3,0,N,1,белый,5609,5620,12,pageC,high,"Row7 col1. Label '3 0 N1' = set3 channel 0."
+S3-ch0-N2-b,3,0,N,2,белый,5621,5631,11,pageC,high,"Row8 col1. Label '3 0 N2' = set3 channel 0."
+S3-ch0-N2-y,3,0,N,2,жёлтый,5632,5644,13,pageC,high,Row8 col2.
+S3-ch19-P1-y,3,19,P,1,жёлтый,5645,5655,11,pageC,high,Row9 col2.
+S3-ch19-P1-b,3,19,P,1,белый,5658,5680,23,pageC,high,"Row9 col1. Small gap 5656–5657 vs row9 col2 end 5655."
+S3-ch19-P2-b,3,19,P,2,белый,5681,5696,16,pageC,high,Row10 col1.
+S3-ch19-P2-y,3,19,P,2,жёлтый,5697,5711,15,pageC,high,Row10 col2.
+S3-ch21-P1-y,3,21,P,1,жёлтый,5712,5722,11,pageC,high,Row11 col2.
+S3-ch21-P1-b,3,21,P,1,белый,5723,5735,13,pageC,high,"Row11 col1. End '5735' has a struck/overwritten middle digit but reads 5735; chains to row12 col1 start 5736."
+S3-ch21-P2-b,3,21,P,2,белый,5736,5747,12,pageC,high,Row12 col1.
+S3-ch21-P2-y,3,21,P,2,жёлтый,5748,5761,14,pageC,high,Row12 col2.
+S3-ch19-N1-y,3,19,N,1,жёлтый,5762,5775,14,pageC,high,Row13 col2.
+S3-ch19-N1-b,3,19,N,1,белый,5776,5782,7,pageC,high,Row13 col1.
+S3-ch19-N2-b,3,19,N,2,белый,5783,5797,15,pageC,med,"Row14 col1. Range 5783–5797. Start middle digit messy/overwritten but chains from row13 col1 end 5782."
+S3-ch19-N2-y,3,19,N,2,жёлтый,5798,5816,19,pageC,high,Row14 col2.
+S3-ch21-N2-y,3,21,N,2,жёлтый,5817,5829,13,pageC,high,"Row16 col2. Range 5817–5829 precedes row15 col2 (5855–5868) — same swap pattern as col1."
+S3-ch21-N2-b,3,21,N,2,белый,5830,5838,9,pageC,med,"Row16 col1. Start '5830' final 0 heavily over-inked (dark blob) but reads 5830 at 8x; end 5838 clear. Range precedes row15 (non-monotonic, mirrors col2)."
+S3-ch21-N1-b,3,21,N,1,белый,5839,5854,16,pageC,high,"Row15 col1. Rows 15/16 non-monotonic: row16 (5830–5838) numerically precedes row15."
+S3-ch21-N1-y,3,21,N,1,жёлтый,5855,5868,14,pageC,high,"Row15 col2. End 5868 = max IMG on disk (set3 band ceiling)."

@@ -1,0 +1,477 @@
+{
+  "meta": {
+    "source": "blind yeast-microscopy LLM run",
+    "consensus_per_image": "3 independent blind analysts, neutral filename",
+    "channels": {
+      "0": "CONTROL (no field)",
+      "17": "hyperbolic-field",
+      "19": "hyperbolic-field",
+      "21": "hyperbolic-field"
+    },
+    "hypothesis": "field accelerates division -> higher density + more clustering",
+    "caveats": [
+      "n=6 images per channel (control n=6; 17 n=6; 19 n=6; 21 n=6).",
+      "Preliminary run only; no biological-replicate structure -> pseudoreplication (multiple images may come from same culture/set).",
+      "Blind LLM density is ORDINAL not absolute; all 24 images scored 'high' density (3/3), so density category gives zero discrimination -> only cell_mean (LLM-estimated, noisy) and clustering/budding labels separate channels.",
+      "cell_mean is an LLM eyeball estimate through-eyepiece, not a hemocytometer count; treat as rank-order signal at best.",
+      "Viability deferred: stain identity unconfirmed (notes assume methylene-blue-type but cannot reliably score dark-stained dead cells); no viability conclusion drawn.",
+      "img_024 cell_mean=0 (homogeneous blue field, no resolvable cells) is an outlier/likely out-of-focus or empty field; it lowers the ch17 mean substantially."
+    ]
+  },
+  "joined_table": [
+    {
+      "neutral": "img_001.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2067,
+      "budding": "few",
+      "distribution": "mixed",
+      "channel": "0",
+      "exposure": "P",
+      "set": "3",
+      "img": "IMG_5460",
+      "focus": 7017.8
+    },
+    {
+      "neutral": "img_002.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 3000,
+      "budding": "few",
+      "distribution": "even",
+      "channel": "21",
+      "exposure": "N",
+      "set": "3",
+      "img": "IMG_5821",
+      "focus": 13127.2
+    },
+    {
+      "neutral": "img_003.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2833,
+      "budding": "some",
+      "distribution": "mixed",
+      "channel": "21",
+      "exposure": "P",
+      "set": "2",
+      "img": "IMG_5270",
+      "focus": 9857.7
+    },
+    {
+      "neutral": "img_004.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 3667,
+      "budding": "few",
+      "distribution": "mixed",
+      "channel": "19",
+      "exposure": "N",
+      "set": "3",
+      "img": "IMG_5814",
+      "focus": 10258.3
+    },
+    {
+      "neutral": "img_005.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 3833,
+      "budding": "few",
+      "distribution": "even",
+      "channel": "17",
+      "exposure": "N",
+      "set": "2",
+      "img": "IMG_5170",
+      "focus": 16088.6
+    },
+    {
+      "neutral": "img_006.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2233,
+      "budding": "few",
+      "distribution": "mixed",
+      "channel": "19",
+      "exposure": "N",
+      "set": "3",
+      "img": "IMG_5808",
+      "focus": 10387.9
+    },
+    {
+      "neutral": "img_007.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 1733,
+      "budding": "few",
+      "distribution": "mixed",
+      "channel": "21",
+      "exposure": "N",
+      "set": "2",
+      "img": "IMG_5417",
+      "focus": 9195.7
+    },
+    {
+      "neutral": "img_008.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2833,
+      "budding": "few",
+      "distribution": "even",
+      "channel": "21",
+      "exposure": "N",
+      "set": "3",
+      "img": "IMG_5817",
+      "focus": 12464.5
+    },
+    {
+      "neutral": "img_009.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 5000,
+      "budding": "none",
+      "distribution": "clustered",
+      "channel": "17",
+      "exposure": "N",
+      "set": "2",
+      "img": "IMG_5181",
+      "focus": 16100.2
+    },
+    {
+      "neutral": "img_010.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2667,
+      "budding": "few",
+      "distribution": "even",
+      "channel": "21",
+      "exposure": "N",
+      "set": "3",
+      "img": "IMG_5822",
+      "focus": 12911.6
+    },
+    {
+      "neutral": "img_011.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 3167,
+      "budding": "few",
+      "distribution": "even",
+      "channel": "19",
+      "exposure": "N",
+      "set": "2",
+      "img": "IMG_5375",
+      "focus": 10391.6
+    },
+    {
+      "neutral": "img_012.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2500,
+      "budding": "few",
+      "distribution": "clustered",
+      "channel": "19",
+      "exposure": "P",
+      "set": "2",
+      "img": "IMG_5236",
+      "focus": 9116.4
+    },
+    {
+      "neutral": "img_013.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 4667,
+      "budding": "few",
+      "distribution": "even",
+      "channel": "17",
+      "exposure": "N",
+      "set": "2",
+      "img": "IMG_5180",
+      "focus": 15962.5
+    },
+    {
+      "neutral": "img_014.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 3000,
+      "budding": "few",
+      "distribution": "even",
+      "channel": "0",
+      "exposure": "N",
+      "set": "2",
+      "img": "IMG_5131",
+      "focus": 13022.7
+    },
+    {
+      "neutral": "img_015.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 4333,
+      "budding": "few",
+      "distribution": "even",
+      "channel": "17",
+      "exposure": "N",
+      "set": "2",
+      "img": "IMG_5171",
+      "focus": 15838.6
+    },
+    {
+      "neutral": "img_016.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 3000,
+      "budding": "some",
+      "distribution": "mixed",
+      "channel": "17",
+      "exposure": "P",
+      "set": "3",
+      "img": "IMG_5484",
+      "focus": 11520.3
+    },
+    {
+      "neutral": "img_017.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2833,
+      "budding": "few",
+      "distribution": "mixed",
+      "channel": "0",
+      "exposure": "N",
+      "set": "3",
+      "img": "IMG_5608",
+      "focus": 11133.4
+    },
+    {
+      "neutral": "img_018.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 1400,
+      "budding": "some",
+      "distribution": "mixed",
+      "channel": "19",
+      "exposure": "P",
+      "set": "3",
+      "img": "IMG_5711",
+      "focus": 5661.5
+    },
+    {
+      "neutral": "img_019.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 3167,
+      "budding": "few",
+      "distribution": "even",
+      "channel": "0",
+      "exposure": "N",
+      "set": "2",
+      "img": "IMG_5136",
+      "focus": 12465.8
+    },
+    {
+      "neutral": "img_020.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2833,
+      "budding": "few",
+      "distribution": "even",
+      "channel": "0",
+      "exposure": "N",
+      "set": "2",
+      "img": "IMG_5140",
+      "focus": 12618.7
+    },
+    {
+      "neutral": "img_021.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 2667,
+      "budding": "few",
+      "distribution": "even",
+      "channel": "21",
+      "exposure": "N",
+      "set": "3",
+      "img": "IMG_5818",
+      "focus": 12475.6
+    },
+    {
+      "neutral": "img_022.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 3667,
+      "budding": "few",
+      "distribution": "mixed",
+      "channel": "19",
+      "exposure": "N",
+      "set": "3",
+      "img": "IMG_5775",
+      "focus": 10821.5
+    },
+    {
+      "neutral": "img_023.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 3167,
+      "budding": "few",
+      "distribution": "mixed",
+      "channel": "0",
+      "exposure": "P",
+      "set": "2",
+      "img": "IMG_5129",
+      "focus": 7422.6
+    },
+    {
+      "neutral": "img_024.jpg",
+      "n": 3,
+      "density": "high",
+      "density_agree": "3/3",
+      "cell_mean": 0,
+      "budding": "none",
+      "distribution": "even",
+      "channel": "17",
+      "exposure": "N",
+      "set": "3",
+      "img": "IMG_5594",
+      "focus": 15474.4
+    }
+  ],
+  "per_channel_aggregation": {
+    "0": {
+      "channel": "0",
+      "n_images": 6,
+      "mean_cell_mean": 2844.5,
+      "cell_mean_values": [
+        2067,
+        3000,
+        2833,
+        3167,
+        2833,
+        3167
+      ],
+      "density_dist": {
+        "low": 0,
+        "med": 0,
+        "high": 6
+      },
+      "budding_dist": {
+        "none": 0,
+        "few": 6,
+        "some": 0,
+        "many": 0
+      },
+      "distribution_dist": {
+        "even": 3,
+        "mixed": 3,
+        "clustered": 0
+      }
+    },
+    "17": {
+      "channel": "17",
+      "n_images": 6,
+      "mean_cell_mean": 3472.2,
+      "cell_mean_values": [
+        3833,
+        5000,
+        4667,
+        4333,
+        3000,
+        0
+      ],
+      "density_dist": {
+        "low": 0,
+        "med": 0,
+        "high": 6
+      },
+      "budding_dist": {
+        "none": 2,
+        "few": 3,
+        "some": 1,
+        "many": 0
+      },
+      "distribution_dist": {
+        "even": 4,
+        "mixed": 1,
+        "clustered": 1
+      }
+    },
+    "19": {
+      "channel": "19",
+      "n_images": 6,
+      "mean_cell_mean": 2772.3,
+      "cell_mean_values": [
+        3667,
+        2233,
+        3167,
+        2500,
+        1400,
+        3667
+      ],
+      "density_dist": {
+        "low": 0,
+        "med": 0,
+        "high": 6
+      },
+      "budding_dist": {
+        "none": 0,
+        "few": 5,
+        "some": 1,
+        "many": 0
+      },
+      "distribution_dist": {
+        "even": 1,
+        "mixed": 4,
+        "clustered": 1
+      }
+    },
+    "21": {
+      "channel": "21",
+      "n_images": 6,
+      "mean_cell_mean": 2622.2,
+      "cell_mean_values": [
+        3000,
+        2833,
+        1733,
+        2833,
+        2667,
+        2667
+      ],
+      "density_dist": {
+        "low": 0,
+        "med": 0,
+        "high": 6
+      },
+      "budding_dist": {
+        "none": 0,
+        "few": 5,
+        "some": 1,
+        "many": 0
+      },
+      "distribution_dist": {
+        "even": 4,
+        "mixed": 2,
+        "clustered": 0
+      }
+    }
+  }
+}

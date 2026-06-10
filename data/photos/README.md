@@ -10,11 +10,11 @@ Flat photo set for the *Saccharomyces cerevisiae* hyperbolic-field study. Photos
 
 | Field / Поле | Value / Значение |
 |---|---|
-| Total photos / Всего фото | 198 |
-| HEIC | 180 |
-| JPEG | 0 |
+| Total photos / Всего фото | 990 |
+| HEIC | 972 |
 | PNG (microscopy / микроскопия) | 18 |
-| Date range / Диапазон дат | 2026-04-19 — 2026-04-22 |
+| JPEG previews / JPEG-превью | 972 |
+| Date range / Диапазон дат | 2026-04-19 — 2026-04-22 (198 dated; rest pending attribution / 198 с датой; остальные ожидают атрибуции) |
 | Photos with `comparison_layout` / С пространственной разметкой | 0 |
 | Photos with `group_label` / С меткой группы | 0 (pending researcher / ожидается) |
 
