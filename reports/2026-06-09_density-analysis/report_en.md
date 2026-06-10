@@ -78,9 +78,9 @@ All three are **group-agnostic**: the channel is revealed only at the aggregatio
 | CH19 | 110 | 118 | 116 | +5 % |
 | **CH21** | 94 | **88** | 78 | **−21 %** |
 
-![Cell count by channel, 100×](charts/chart_counts_100x.png)
+![Cell count by channel, 100×](https://raw.githubusercontent.com/AdvancedScientificResearchProjects/Hyperbolic_Field_SaccharomycesCerevisiae_Study/main/reports/2026-06-09_density-analysis/charts/chart_counts_100x.png)
 
-![Field effect vs control](charts/chart_relative_effect.png)
+![Field effect vs control](https://raw.githubusercontent.com/AdvancedScientificResearchProjects/Hyperbolic_Field_SaccharomycesCerevisiae_Study/main/reports/2026-06-09_density-analysis/charts/chart_relative_effect.png)
 
 **Result**: ordering **CH17 > CH19 ≈ CH0 > CH21**. CH17 densest, CH21 below control.
 
@@ -93,7 +93,7 @@ All three are **group-agnostic**: the channel is revealed only at the aggregatio
 | CH19 | 0.572 | 0.342 |
 | CH21 | 0.460 | 0.259 |
 
-![Occupancy by channel and magnification](charts/chart_occupancy_by_magnification.png)
+![Occupancy by channel and magnification](https://raw.githubusercontent.com/AdvancedScientificResearchProjects/Hyperbolic_Field_SaccharomycesCerevisiae_Study/main/reports/2026-06-09_density-analysis/charts/chart_occupancy_by_magnification.png)
 
 Same ordering at both magnifications: CH17 highest, CH21 lowest.
 
@@ -104,7 +104,7 @@ Same ordering at both magnifications: CH17 highest, CH21 lowest.
 | Cycle 2 | 95 | **226** | 94 | **64** |
 | Cycle 3 | 128 | **191** | 137 | **109** |
 
-![Cell count per cycle](charts/chart_counts_by_cycle.png)
+![Cell count per cycle](https://raw.githubusercontent.com/AdvancedScientificResearchProjects/Hyperbolic_Field_SaccharomycesCerevisiae_Study/main/reports/2026-06-09_density-analysis/charts/chart_counts_by_cycle.png)
 
 CH17 ranks #1 and CH21 ranks #4 in **both** cycles 2 and 3 (mean rank 1.00 / 4.00). Note the count metric here covers **only cycles 2–3** (cycle 1 has no 100× magnification split → no counts), so the count effect is **N=2 cycles**.
 
@@ -138,7 +138,7 @@ Per-field Spearman correlations between the three independent measurements:
 | cyto2 count ↔ LLM | 100× | **0.81** | 376 |
 | occupancy ↔ LLM | 10× | 0.62 | 370 |
 
-![CV vs LLM agreement, 100×](charts/chart_cv_vs_llm.png)
+![CV vs LLM agreement, 100×](https://raw.githubusercontent.com/AdvancedScientificResearchProjects/Hyperbolic_Field_SaccharomycesCerevisiae_Study/main/reports/2026-06-09_density-analysis/charts/chart_cv_vs_llm.png)
 
 **Verdict**: at 100× all three methods agree strongly per-field (ρ = 0.81–0.89), and the two CV methods agree with each other (ρ = 0.88) — the signal is not an artefact of one algorithm. At 10× agreement weakens (ρ = 0.62) because confluent lawns are physically hard to quantify by counting or by eye; there only the occupancy proxy is reliable.
 

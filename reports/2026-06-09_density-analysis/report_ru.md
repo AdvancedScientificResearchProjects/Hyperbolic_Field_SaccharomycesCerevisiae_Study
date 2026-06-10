@@ -78,9 +78,9 @@
 | CH19 | 110 | 118 | 116 | +5 % |
 | **CH21** | 94 | **88** | 78 | **−21 %** |
 
-![Счёт клеток по каналам, 100×](charts/chart_counts_100x.png)
+![Счёт клеток по каналам, 100×](https://raw.githubusercontent.com/AdvancedScientificResearchProjects/Hyperbolic_Field_SaccharomycesCerevisiae_Study/main/reports/2026-06-09_density-analysis/charts/chart_counts_100x.png)
 
-![Эффект поля относительно контроля](charts/chart_relative_effect.png)
+![Эффект поля относительно контроля](https://raw.githubusercontent.com/AdvancedScientificResearchProjects/Hyperbolic_Field_SaccharomycesCerevisiae_Study/main/reports/2026-06-09_density-analysis/charts/chart_relative_effect.png)
 
 **Результат**: порядок **CH17 > CH19 ≈ CH0 > CH21**. CH17 наиболее плотный, CH21 — ниже контроля.
 
@@ -93,7 +93,7 @@
 | CH19 | 0.572 | 0.342 |
 | CH21 | 0.460 | 0.259 |
 
-![Занятость по каналам и увеличениям](charts/chart_occupancy_by_magnification.png)
+![Занятость по каналам и увеличениям](https://raw.githubusercontent.com/AdvancedScientificResearchProjects/Hyperbolic_Field_SaccharomycesCerevisiae_Study/main/reports/2026-06-09_density-analysis/charts/chart_occupancy_by_magnification.png)
 
 Тот же порядок при обоих увеличениях: CH17 — наибольший, CH21 — наименьший.
 
@@ -104,7 +104,7 @@
 | Цикл 2 | 95 | **226** | 94 | **64** |
 | Цикл 3 | 128 | **191** | 137 | **109** |
 
-![Счёт клеток по циклам](charts/chart_counts_by_cycle.png)
+![Счёт клеток по циклам](https://raw.githubusercontent.com/AdvancedScientificResearchProjects/Hyperbolic_Field_SaccharomycesCerevisiae_Study/main/reports/2026-06-09_density-analysis/charts/chart_counts_by_cycle.png)
 
 CH17 занимает #1, а CH21 — #4 в **обоих** циклах 2 и 3 (средний ранг 1.00 / 4.00). Следует отметить, что метрика счёта охватывает здесь **только циклы 2–3** (в цикле 1 нет разделения по увеличению 100× → счёт отсутствует), поэтому эффект по счёту охватывает **N=2 цикла**.
 
@@ -138,7 +138,7 @@ CH17 занимает #1, а CH21 — #4 в **обоих** циклах 2 и 3 (
 | счёт cyto2 ↔ LLM | 100× | **0.81** | 376 |
 | занятость ↔ LLM | 10× | 0.62 | 370 |
 
-![Согласование CV и LLM, 100×](charts/chart_cv_vs_llm.png)
+![Согласование CV и LLM, 100×](https://raw.githubusercontent.com/AdvancedScientificResearchProjects/Hyperbolic_Field_SaccharomycesCerevisiae_Study/main/reports/2026-06-09_density-analysis/charts/chart_cv_vs_llm.png)
 
 **Вывод**: при 100× все три метода хорошо согласуются попарно (ρ = 0.81–0.89), а два метода CV согласуются между собой (ρ = 0.88) — сигнал не является артефактом одного алгоритма. При 10× согласованность снижается (ρ = 0.62), поскольку слитные газоны физически трудно квантифицировать как подсчётом, так и визуально; только прокси занятости является здесь надёжным.
 

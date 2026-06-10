@@ -178,7 +178,7 @@ If CH19 is associated with increased activity and CH17 exhibits a similar or int
 
 ### Sample Groups / Группы Образцов
 
-![Diagram 1](charts/mermaid/root_1.png)
+![Diagram 1](https://raw.githubusercontent.com/AdvancedScientificResearchProjects/Hyperbolic_Field_SaccharomycesCerevisiae_Study/main/charts/mermaid/root_1.png)
 
 ### Channel Predictions / Предсказания по Каналам
 
@@ -265,7 +265,7 @@ Temperature, medium composition, container type, time from preparation to exposu
 
 ### Pipeline Architecture / Архитектура Пайплайна
 
-![Diagram 2](charts/mermaid/root_2.png)
+![Diagram 2](https://raw.githubusercontent.com/AdvancedScientificResearchProjects/Hyperbolic_Field_SaccharomycesCerevisiae_Study/main/charts/mermaid/root_2.png)
 
 ### Dependencies / Зависимости
 
@@ -376,7 +376,7 @@ log(OD) ~ Condition * Timepoint + (1 | SampleID)
 | CH19 | 118 | +5 % |
 | **CH21** | **88** | **−21 %** |
 
-![Cell count by channel](reports/2026-06-09_density-analysis/charts/chart_counts_100x.png)
+![Cell count by channel](https://raw.githubusercontent.com/AdvancedScientificResearchProjects/Hyperbolic_Field_SaccharomycesCerevisiae_Study/main/reports/2026-06-09_density-analysis/charts/chart_counts_100x.png)
 
 Per-field method agreement (Spearman): CV-count ↔ occupancy ρ=0.88; occupancy ↔ LLM ρ=0.89; CV-count ↔ LLM ρ=0.81 (at 100×). / Согласие методов по кадрам (Спирмен): счёт ↔ занятость ρ=0.88; занятость ↔ LLM ρ=0.89; счёт ↔ LLM ρ=0.81 (при 100×).
 
@@ -408,7 +408,7 @@ The density signal was triangulated across three independent analysis stacks (bl
 
 ## TIMELINE / ВРЕМЕННАЯ ШКАЛА
 
-![Diagram 3](charts/mermaid/root_3.png)
+![Diagram 3](https://raw.githubusercontent.com/AdvancedScientificResearchProjects/Hyperbolic_Field_SaccharomycesCerevisiae_Study/main/charts/mermaid/root_3.png)
 
 ---
 
@@ -430,7 +430,7 @@ The density signal was triangulated across three independent analysis stacks (bl
 
 ## PATENT CONNECTION / СВЯЗЬ С ПАТЕНТОМ
 
-![Diagram 1](charts/mermaid/retry_1.png)
+![Diagram 1](https://raw.githubusercontent.com/AdvancedScientificResearchProjects/Hyperbolic_Field_SaccharomycesCerevisiae_Study/main/charts/mermaid/retry_1.png)
 
 ---
 
