@@ -17,7 +17,7 @@
 | **Study Type / Тип Исследования** | Randomized Controlled Experiment (double-blind) / Рандомизированный контролируемый эксперимент (двойное слепое) |
 | **Blinding / Ослепление** | Neutral filenames at capture; condition revealed only at aggregation; blind LLM scoring via Claude Opus 4.8 / Нейтральные имена файлов при съёмке; условие раскрывается только при агрегации; слепое LLM-скоринг через Claude Opus 4.8 |
 | **License / Лицензия** | CC-BY Attribution-NonCommercial-NoDerivatives 4.0 International |
-| **Archive / Архив** | [TBD — not yet archived on archive.org] |
+| **Archive / Архив** | [TBD — not yet archived on archive.org] / [Ещё не заархивировано на archive.org] |
 
 ---
 
@@ -137,7 +137,7 @@ flowchart TB
 |---|---|
 | **OSF Registry / Реестр OSF** | [osf.io/vxkum](https://osf.io/vxkum) (2026-04-04) |
 | **Registration DOI / DOI Регистрации** | [TBD — pending] / [Ожидается] |
-| **Internet Archive / Архив Интернета** | [TBD — not yet archived] |
+| **Internet Archive / Архив Интернета** | [TBD — not yet archived] / [Ещё не заархивировано] |
 | **OSF Components / Компоненты OSF** | Data, Analytic Code, Materials, Papers, Supplements |
 | **Related Study: Blood Plasma / Связанное Исследование: Плазма** | [osf.io/8q42f — DOI 10.17605/OSF.IO/GWA9E](https://doi.org/10.17605/OSF.IO/GWA9E) |
 

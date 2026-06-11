@@ -244,7 +244,7 @@ If CH19 is associated with increased activity and CH17 exhibits a similar or int
 
 ### Control Variables / Контрольные Переменные
 
-Temperature, medium composition, container type, time from preparation to exposure.
+Temperature, medium composition, container type, time from preparation to exposure. / Температура, состав среды, тип ёмкости, время от подготовки до воздействия.
 
 ---
 
@@ -344,7 +344,7 @@ log(OD) ~ Condition * Timepoint + (1 | SampleID)
 - **N=2 cycles / N=2 цикла** — the count result rests on only 2 independent experiment runs. / результат по счёту опирается лишь на 2 независимых запуска эксперимента.
 - **descriptive / описательно** — p-values shown for scale and direction only, not as formal proof. / p-значения даны только для масштаба и направления, не как доказательство.
 - **sign-flip / смена знака** — cycle 1 showed the opposite ordering from cycles 2–3. / цикл 1 показал порядок, обратный циклам 2–3.
-- **endpoint / эндпойнт** — a single-moment photo, not a time-series film of the cells. / снимок одного момента, а не съёмка клеток во времени.
+- **endpoint / конечная точка (эндпойнт)** — a single-moment photo, not a time-series film of the cells. / снимок одного момента, а не съёмка клеток во времени.
 - **CH0/CH17/CH19/CH21** — emitter settings; CH0 = emitter off (control), CH17/19/21 = three field configurations. / настройки излучателя; CH0 = выключен (контроль), CH17/19/21 = три конфигурации поля.
 - **occupancy / занятость** — fraction of the image area covered by cells (0 = empty, 1 = full). / доля площади снимка, занятая клетками (0 = пусто, 1 = полностью).
 
@@ -354,14 +354,14 @@ log(OD) ~ Condition * Timepoint + (1 | SampleID)
 
 **First imaging batch analysed (920 fields, LLM-scored subset / подмножество, оценённое LLM, cycles 001–003). A directional effect on cell density was found across three measurement methods (CV cell count, CV occupancy, blind LLM vision), reproducible in 2 of 3 cycles. CH17 is the strongest growth enhancer; CH21 falls below control (deceleration, as predicted); CH19 matches control by count (its hypothesised kinetic/morphological effect — thinner cells / faster division — is NOT supported on this endpoint batch; see report §9).**
 
-**Проанализирован первый пакет снимков (920 полей, подмножество, оценённое LLM / LLM-scored subset, циклы 001–003). Направленный эффект на плотность клеток подтверждён тремя методами измерения (CV-счёт, CV-занятость, слепой LLM-визион), воспроизводим в 2 из 3 циклов. CH17 — сильнейший стимулятор роста; CH21 — ниже контроля (замедление, как и предсказано); CH19 совпадает с контролем по числу клеток (его предполагаемый кинетический/морфологический эффект — более тонкие клетки / ускоренное деление — на этом эндпойнт-пакете НЕ подтверждается; см. §9 отчёта).**
+**Проанализирован первый пакет снимков (920 полей, подмножество, оценённое LLM / LLM-scored subset, циклы 001–003). Направленный эффект на плотность клеток подтверждён тремя методами измерения (CV-счёт, CV-занятость, слепой LLM-визион), воспроизводим в 2 из 3 циклов. CH17 — сильнейший стимулятор роста; CH21 — ниже контроля (замедление, как и предсказано); CH19 совпадает с контролем по числу клеток (его предполагаемый кинетический/морфологический эффект — более тонкие клетки / ускоренное деление — на этой конечной точке (эндпойнт) НЕ подтверждается; см. §9 отчёта).**
 
 ### COMPARATIVE RESULTS / СРАВНИТЕЛЬНЫЕ РЕЗУЛЬТАТЫ
 
 | Parameter / Параметр | Control / Контроль (CH0) | CH17 | CH19 | CH21 |
 |---|:---:|:---:|:---:|:---:|
 | **Cell count 100× / Счёт клеток 100×** | 112 | **205 (+83%)** | 118 (+5%) | **88 (−21%)** |
-| **vs control (×) / к контролю (×)** | 1.0× | **≈1.7–1.8×** | ≈1.05× | ≈0.79× |
+| **vs control (×) / к контролю (×)** | 1.0× | **≈1.6–1.8×** | ≈1.05× | ≈0.79× |
 | **Occupancy rank (cyc 2–3) / Ранг занятости (циклы 2–3)** | mid / средн. | **1st / 1-й** | 2nd / 2-й | **4th / 4-й (lowest)** |
 | **Cell area 100× / Площадь клеток 100×** | baseline / база | −12.7% (p≈6e-11 = 0.00000000006 — chance probability / вероятность случайности) | −7.6% (p≈6e-5 = 0.00006) | −6.1% (p≈4e-3 = 0.004) |
 | **Cell shape (elongation) / Форма (вытянутость)** | baseline / база | n.s. (not significant / незначимо) | rounder, not thinner / круглее, не тоньше | n.s. (not significant / незначимо) |
@@ -370,9 +370,9 @@ log(OD) ~ Condition * Timepoint + (1 | SampleID)
 
 | Channel / Канал | Effect / Эффект | Interpretation / Интерпретация |
 |---|---|---|
-| **CH17** | +83% cell count, ≈1.7–1.8× control, densest in every method (cycles 2–3, 100×) / +83% к счёту, ≈1.7–1.8× контроля, самый плотный во всех методах (циклы 2–3, 100×) | Strongest growth enhancer / Сильнейший стимулятор роста |
+| **CH17** | +83% cell count, ≈1.6–1.8× control, densest in every method (cycles 2–3, 100×) / +83% к счёту, ≈1.6–1.8× контроля, самый плотный во всех методах (циклы 2–3, 100×) | Strongest growth enhancer / Сильнейший стимулятор роста |
 | **CH21** | −21% cell count, below control, sparsest in every method / −21% к счёту, ниже контроля, самый разреженный во всех методах | Deceleration, as predicted — but cycle 1 reverses this / Замедление, как и предсказано — но цикл 1 это обращает |
-| **CH19** | ≈ control by count (EXPECTED, not a null); cells ~7.6% smaller in area (p≈6e-5) but so are all field channels — and NOT more elongated (rounder if anything); budding flat / ≈ контроль по счёту (ОЖИДАЕМО, не нулевой); клетки ~7.6% меньше по площади (p≈6e-5), но это у всех каналов — и НЕ более вытянутые (скорее круглее); почкование без изменений | Thinner/faster-division hypothesis NOT supported on this endpoint batch — needs time-lapse + per-cell morphometry / Гипотеза «тоньше/быстрее делятся» на эндпойнт-пакете НЕ подтверждена — нужен time-lapse + поклеточная морфометрия |
+| **CH19** | ≈ control by count (EXPECTED, not a null); cells ~7.6% smaller in area (p≈6e-5) but so are all field channels — and NOT more elongated (rounder if anything); budding flat / ≈ контроль по счёту (ОЖИДАЕМО, не нулевой); клетки ~7.6% меньше по площади (p≈6e-5), но это у всех каналов — и НЕ более вытянутые (скорее круглее); почкование без изменений | Thinner/faster-division hypothesis NOT supported on this endpoint batch — needs time-lapse + per-cell morphometry / Гипотеза «тоньше/быстрее делятся» на этой конечной точке (эндпойнт) НЕ подтверждена — нужен тайм-лапс + поклеточная морфометрия |
 
 > **Caveat / Оговорка:** Preliminary — 2 of 3 cycles agree; cycle 1 reverses ordering; pseudoreplicated, descriptive p-values; needs ≥5 cycles. / Предварительно — 2 из 3 циклов согласуются; цикл 1 обращает порядок; псевдорепликация, описательные p-значения; нужно ≥5 циклов.
 
@@ -633,7 +633,7 @@ Plain-language reference for the technical terms used in this README and the lin
 | **kinetic effect** | An effect on the speed/rate of cell division (not on the number of cells) | Влияние на скорость деления клеток (не на их количество) |
 | **morphological effect** | An effect on the physical shape or size of cells | Влияние на форму или размер клеток |
 | **morphometry** | Quantitative measurement of cell shape, size, and geometry (area, elongation, roundness) | Количественное измерение формы, размера и геометрии клеток (площадь, вытянутость, округлость) |
-| **endpoint / static endpoint** | A single measurement taken at one moment (not a time-series); shows only the cells' state at the photograph, not how they changed | Одно измерение в один момент (не временной ряд); показывает только состояние клеток на снимке, не их изменение |
+| **endpoint / static endpoint / конечная точка (эндпойнт)** | A single measurement taken at one moment (not a time-series); shows only the cells' state at the photograph, not how they changed | Одно измерение в один момент (не временной ряд); показывает только состояние клеток на снимке, не их изменение |
 | **confound / imaging confound** | An uncontrolled factor other than the treatment that could explain a difference (e.g. different focus, dilution, or lighting between channels) | Неконтролируемый фактор помимо воздействия, который мог бы объяснить различие (разная фокусировка, разведение, освещение между каналами) |
 
 ### Study design — Дизайн исследования

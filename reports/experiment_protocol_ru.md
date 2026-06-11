@@ -1,5 +1,7 @@
 # Протокол эксперимента: исследование Saccharomyces cerevisiae в гиперболическом поле
 
+**🌐 Language / Язык:** [English](experiment_protocol_en.md) · **Русский**
+
 ## Установка
 
 - Модельный организм: *Saccharomyces cerevisiae* (сухие дрожжи Dr. Oetker, 7г, партия L329 M68)

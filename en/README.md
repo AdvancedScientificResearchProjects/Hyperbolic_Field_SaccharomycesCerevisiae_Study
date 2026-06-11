@@ -224,7 +224,7 @@ Analysis of the first imaging batch (972 microscopy fields, cycles 001–003) us
 | CH19 | 118 | +5% | 2nd |
 | **CH21** | **88** | **−21%** | **4th (below control, every method)** |
 
-CH19 is not a null result: its effect is kinetic/morphological — cells are ~7% smaller in area (p ≈ 2.6×10⁻⁴ descriptive). **CH19's pre-registered role (hypothesis) is to accelerate division rate / dynamics, NOT increase biomass or cell count** (count ≈ control is the expected outcome; the count increase is CH17). On this static endpoint batch cells are ~7% smaller in area but not more elongated and budding is flat — the division-rate hypothesis needs time-lapse / OD600 follow-up (see report §9).
+CH19 is not a null result: its effect is kinetic/morphological — cells are ~7.6% smaller in area (p ≈ 6e-5 descriptive). **CH19's pre-registered role (hypothesis) is to accelerate division rate / dynamics, NOT increase biomass or cell count** (count ≈ control is the expected outcome; the count increase is CH17). On this static endpoint batch cells are ~7.6% smaller in area but not more elongated and budding is flat — the division-rate hypothesis needs time-lapse / OD600 follow-up (see report §9).
 
 Per-field method agreement (Spearman): CV-count ↔ occupancy ρ = 0.88; occupancy ↔ LLM ρ = 0.89; CV-count ↔ LLM ρ = 0.81.
 

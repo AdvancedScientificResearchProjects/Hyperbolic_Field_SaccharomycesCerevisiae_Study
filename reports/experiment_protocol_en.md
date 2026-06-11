@@ -1,5 +1,7 @@
 # Experiment Protocol: Hyperbolic Field Saccharomyces cerevisiae Study
 
+**🌐 Language / Язык:** **English** · [Русский](experiment_protocol_ru.md)
+
 ## Setup
 
 - Model organism: *Saccharomyces cerevisiae* (Dr. Oetker dry yeast, 7g, batch L329 M68)
