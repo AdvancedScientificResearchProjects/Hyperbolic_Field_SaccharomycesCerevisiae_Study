@@ -333,6 +333,23 @@ log(OD) ~ Condition * Timepoint + (1 | SampleID)
 
 ---
 
+### Quick Reader's Guide / Краткий словарь
+
+*Plain-language key to the terms used in the results below. Full list in the [Glossary](#glossary--глоссарий). / Краткий разбор терминов из результатов ниже. Полный список — в [Глоссарии](#glossary--глоссарий).*
+
+- **n.s.** — not significant: the difference is too small to prove it is real. / незначимо: различие слишком мало, чтобы считать его реальным.
+- **p-value / p-значение** — probability the result is due to chance; p < 0.05 = less than 5% chance (e.g. 6e-5 = 0.00006). / вероятность того, что результат случаен; p < 0,05 = менее 5% (например, 6e-5 = 0,00006).
+- **ρ (rho)** — method-agreement score from 0 to 1; ρ = 0.88 = very strong agreement. / показатель согласия методов от 0 до 1; ρ = 0,88 = очень высокое согласие.
+- **pseudoreplication / псевдорепликация** — photos from the same dish count as 1 replicate, not many; this is why the p-values are descriptive only. / снимки одной чашки считаются 1 репликатом, а не многими; поэтому p-значения только описательные.
+- **N=2 cycles / N=2 цикла** — the count result rests on only 2 independent experiment runs. / результат по счёту опирается лишь на 2 независимых запуска эксперимента.
+- **descriptive / описательно** — p-values shown for scale and direction only, not as formal proof. / p-значения даны только для масштаба и направления, не как доказательство.
+- **sign-flip / смена знака** — cycle 1 showed the opposite ordering from cycles 2–3. / цикл 1 показал порядок, обратный циклам 2–3.
+- **endpoint / эндпойнт** — a single-moment photo, not a time-series film of the cells. / снимок одного момента, а не съёмка клеток во времени.
+- **CH0/CH17/CH19/CH21** — emitter settings; CH0 = emitter off (control), CH17/19/21 = three field configurations. / настройки излучателя; CH0 = выключен (контроль), CH17/19/21 = три конфигурации поля.
+- **occupancy / занятость** — fraction of the image area covered by cells (0 = empty, 1 = full). / доля площади снимка, занятая клетками (0 = пусто, 1 = полностью).
+
+---
+
 ## KEY RESULTS / КЛЮЧЕВЫЕ РЕЗУЛЬТАТЫ
 
 **First imaging batch analysed (920 fields, LLM-scored subset / подмножество, оценённое LLM, cycles 001–003). A directional effect on cell density was found across three measurement methods (CV cell count, CV occupancy, blind LLM vision), reproducible in 2 of 3 cycles. CH17 is the strongest growth enhancer; CH21 falls below control (deceleration, as predicted); CH19 matches control by count (its hypothesised kinetic/morphological effect — thinner cells / faster division — is NOT supported on this endpoint batch; see report §9).**
@@ -346,8 +363,8 @@ log(OD) ~ Condition * Timepoint + (1 | SampleID)
 | **Cell count 100× / Счёт клеток 100×** | 112 | **205 (+83%)** | 118 (+5%) | **88 (−21%)** |
 | **vs control (×) / к контролю (×)** | 1.0× | **≈1.7–1.8×** | ≈1.05× | ≈0.79× |
 | **Occupancy rank (cyc 2–3) / Ранг занятости (циклы 2–3)** | mid / средн. | **1st / 1-й** | 2nd / 2-й | **4th / 4-й (lowest)** |
-| **Cell area 100× / Площадь клеток 100×** | baseline / база | −12.7% (p≈6e-11) | −7.6% (p≈6e-5) | −6.1% (p≈4e-3) |
-| **Cell shape (elongation) / Форма (вытянутость)** | baseline / база | n.s. | rounder, not thinner / круглее, не тоньше | n.s. |
+| **Cell area 100× / Площадь клеток 100×** | baseline / база | −12.7% (p≈6e-11 = 0.00000000006 — chance probability / вероятность случайности) | −7.6% (p≈6e-5 = 0.00006) | −6.1% (p≈4e-3 = 0.004) |
+| **Cell shape (elongation) / Форма (вытянутость)** | baseline / база | n.s. (not significant / незначимо) | rounder, not thinner / круглее, не тоньше | n.s. (not significant / незначимо) |
 
 ### KEY FINDINGS / КЛЮЧЕВЫЕ ВЫВОДЫ
 
@@ -544,6 +561,93 @@ See **[data/README.md](data/README.md)** — Data Hub indexing the flat photo se
 
 ---
 
+## GLOSSARY / ГЛОССАРИЙ
+
+Plain-language reference for the technical terms used in this README and the linked reports. / Понятный справочник по техническим терминам этого README и связанных отчётов.
+
+### Statistics / Статистика
+
+| Term / Термин | English meaning | Значение по-русски |
+|---|---|---|
+| **n.s.** | Not statistically significant — the difference between groups is too small to rule out chance | Незначимо / статистически не значимо — различие между группами слишком мало, чтобы исключить случайность |
+| **p / p-value** | A number (0–1) measuring the probability that an observed difference arose by chance. p < 0.05 = less than 5% chance it is random. Scientific notation: 6e-5 = 0.00006 (smaller = less likely to be chance) | Число от 0 до 1: вероятность того, что наблюдаемое различие возникло случайно. p < 0,05 = менее 5% вероятности случайности. Запись 6e-5 = 0,00006 (меньше = менее вероятна случайность) |
+| **descriptive p-value** | The p-value is shown for scale/direction only, not as a formal significance test, because the independent-samples assumption is violated (see pseudoreplication) | p приводится только для справки о масштабе/направлении, не как формальная проверка — допущение о независимости нарушено (см. псевдорепликация) |
+| **pseudoreplication** | Treating multiple photos from the same biological dish as independent observations; it inflates sample size and makes p-values artificially small. True replicates here are the 3 experiment cycles, not individual photos | Несколько снимков одной чашки Петри считаются независимыми; завышает выборку и занижает p. Настоящие репликаты — 3 цикла эксперимента, а не отдельные снимки |
+| **N=2 cycles** | The cell-count result rests on only 2 independent experiment repetitions; too few to test statistically at the cycle level | Результат по счёту клеток опирается лишь на 2 независимых повторения; слишком мало для статистической проверки на уровне цикла |
+| **ρ (rho) / Spearman correlation** | A number (−1 to +1) measuring how consistently two methods rank the same fields. ρ = 0.88 = very strong agreement | Число от −1 до +1, показывающее согласованность ранжирования двух методов. ρ = 0,88 = очень высокое согласие |
+| **Kruskal–Wallis** | A statistical test comparing 3+ groups without assuming a bell-curve distribution | Статистический тест для сравнения 3 и более групп без допущения о нормальном распределении |
+| **Δ (delta)** | Difference between two values (e.g. Δ ecc = 0.016 means eccentricity differs by 0.016 units) | Разность двух значений (например, Δ ecc = 0,016 — эксцентриситет отличается на 0,016 единицы) |
+| **LME (Linear Mixed-Effects Model)** | A statistical model for repeated-measurement data; separates treatment effects from random sample variation | Статистическая модель для данных с повторными измерениями; разделяет эффекты воздействия и случайную изменчивость |
+| **Tukey HSD** | A post-hoc test comparing every pair of groups after an overall difference is found, controlling for false positives | Пост-хок тест попарных сравнений всех групп при контроле ложных срабатываний |
+| **Bonferroni** | A correction for running many statistical tests at once; divides the significance threshold by the number of tests | Поправка при многочисленных одновременных тестах; делит порог значимости на число тестов |
+| **Cohen's d** | Effect size: how many standard deviations apart two group means are (d ≥ 0.8 large, ≈0.5 medium, ≈0.2 small) | Размер эффекта: сколько стандартных отклонений между средними двух групп (d ≥ 0,8 большой, ≈0,5 средний, ≈0,2 малый) |
+| **partial eta squared** | Effect size: fraction of total data variation explained by the treatment (0–1; larger = stronger) | Размер эффекта: доля общей дисперсии, объясняемой воздействием (0–1; больше = сильнее) |
+| **AUC (Area Under the Curve)** | The total area under a time-series curve; measures total fermentation activity over the whole period | Суммарная площадь под кривой временного ряда; измеряет суммарную активность ферментации за весь период |
+| **sign-flip** | The direction of an effect reversed between conditions (cycle 1 showed the opposite ordering from cycles 2–3) | Направление эффекта поменялось на противоположное (цикл 1 показал порядок, обратный циклам 2–3) |
+| **a priori** | Known or predicted before the experiment; CH17 was "a priori unknown" = no prediction was made for it | Известное или предсказанное до эксперимента; CH17 «априори неизвестен» = прогноза не было |
+| **R²** | R-squared: how well a model fits the data (0–1). R² = 0.81 = 81% of variation explained | R²: мера качества подгонки модели (0–1). R² = 0,81 = объяснён 81% дисперсии |
+
+### Computer vision / imaging — Компьютерное зрение
+
+| Term / Термин | English meaning | Значение по-русски |
+|---|---|---|
+| **Cellpose / cyto2** | Open-source AI software that automatically finds and outlines individual cells in microscopy photos; "cyto2" = its neural-network model trained for cell-body images | Программа ИИ с открытым кодом для автоматического обнаружения и обводки клеток; «cyto2» — её нейросетевая модель, обученная на изображениях тела клетки |
+| **segmentation / instance segmentation** | Identifying which image pixels belong to each cell and drawing its boundary; "instance" = each cell outlined separately | Определение пикселей каждой клетки и обводка границы; «инстанционная» = каждая клетка обводится отдельно |
+| **CNN (Convolutional Neural Network)** | The type of AI used to recognize cells, trained from many example images | Тип ИИ для распознавания клеток, обученный на множестве примеров изображений |
+| **occupancy / texture occupancy** | Fraction of image area covered by cells (0 = empty, 1 = full), measured from pixel-brightness patterns without outlining each cell | Доля площади снимка, занятая клетками (0 = пусто, 1 = полностью), измеряется по яркости пикселей без обводки клеток |
+| **Otsu** | An algorithm that automatically finds the brightness threshold separating cell pixels from background | Алгоритм автоматического нахождения порога яркости между клетками и фоном |
+| **Canny** | An edge-detection algorithm that finds cell outlines; used here to count edges as a density proxy | Алгоритм обнаружения краёв; здесь считает края клеток как косвенный показатель плотности |
+| **field (microscopy field / FOV)** | One photograph taken through the microscope (990 fields = 990 photos) | Один снимок через микроскоп (990 полей = 990 фотографий) |
+| **eccentricity** | Cell-shape metric (0–1): 0 = perfect circle, 1 = line; higher = more elongated | Метрика формы клетки (0–1): 0 = круг, 1 = линия; выше = более вытянута |
+| **aspect ratio (major:minor axis)** | Longest diameter divided by shortest diameter of an ellipse fitted to the cell; 1.0 = circle, larger = more elongated | Отношение длиннейшего к кратчайшему диаметру вписанного эллипса; 1,0 = круг, больше = вытянутее |
+| **solidity** | Shape metric (0–1) for how "compact" the cell boundary is; a budding cell has lower solidity | Метрика компактности контура клетки (0–1); почкующаяся клетка имеет меньшую солидность |
+| **blob detection** | Finding cells as rounded filled regions, without neural-network segmentation | Поиск клеток как округлых заполненных областей без нейросетевой сегментации |
+| **downscale** | Reducing image pixel count before processing; standardizes cell size in pixels and speeds analysis | Уменьшение числа пикселей перед обработкой; стандартизирует размер клеток и ускоряет анализ |
+| **100× / 10× magnification** | Objects appear 100× or 10× larger than real size; at 100× individual cells (~5–8 µm) are visible, at 10× only population density | Объекты выглядят в 100 или 10 раз крупнее; при 100× видны отдельные клетки (~5–8 мкм), при 10× — только плотность популяции |
+| **HEIC** | Apple iPhone photo format; here, photos taken through the microscope eyepiece with a smartphone | Формат фотографий iPhone; здесь — снимки через окуляр микроскопа смартфоном |
+| **YeastSAM** | AI segmentation tool specialized for budding-yeast microscopy; more accurate than Cellpose on budding cells | Инструмент ИИ-сегментации для почкующихся дрожжей; точнее Cellpose на почкующихся клетках |
+| **AMiGA** | Software for fitting microbial growth curves (growth rate, lag phase) using a Gaussian Process | Программа для подгонки кривых роста микробов (скорость роста, лаг-фаза) гауссовским процессом |
+| **CIELAB / b\* channel** | A color-description system; the b\* channel measures blue-yellow shift, used to detect methylene-blue dye uptake | Система описания цвета; канал b\* измеряет синий/жёлтый сдвиг, для обнаружения захвата метиленового синего |
+
+### AI / LLM method — AI-метод
+
+| Term / Термин | English meaning | Значение по-русски |
+|---|---|---|
+| **blind LLM scoring** | An AI model (Claude Opus 4.8) scored each photo without knowing which channel it came from — preventing bias; "blind" = scorer does not know the group | ИИ-модель оценивала каждый снимок, не зная, из какого канала он взят — исключает предвзятость; «слепой» = оценщик не знает группу |
+| **group-agnostic** | The method does not see channel labels until the final grouping step | Метод не видит метки каналов до финального шага группировки |
+| **diagnostic vs consistent** | "Consistent with" = compatible with the hypothesis but not proof; "diagnostic" = uniquely identifies one cause, ruling out others | «Согласуется с» = совместимо с гипотезой, но не доказывает; «диагностический» = однозначно указывает на одну причину |
+
+### Biology / Биология
+
+| Term / Термин | English meaning | Значение по-русски |
+|---|---|---|
+| **budding index / budding fraction** | Percentage of yeast cells actively dividing at the moment of imaging, seen as a small "bud" on the mother cell; higher = more division | Доля дрожжевых клеток, активно делящихся в момент съёмки — видна как «почка» на материнской клетке; выше = активнее деление |
+| **Whi5 / G1-sizer** | Whi5 is a protein that brakes division; the G1-sizer lets cells "measure" their size before dividing. Cells passing the "Start" point while small make small daughters | Whi5 — белок-тормоз деления; механизм G1-сайзера позволяет клетке «измерить» размер перед делением. Клетки, прошедшие «Start» маленькими, дают мелких дочерей |
+| **Start (cell cycle)** | The molecular decision point after which a yeast cell is committed to dividing | Молекулярная «точка невозврата» клеточного цикла, после которой клетка обязана начать деление |
+| **G2/M arrest** | Cells stuck just before the division step; they look ready to divide (may show buds) but never finish — hard to tell from fast division in one photo | Клетки застряли прямо перед делением; выглядят готовыми (с почками), но деление не завершается — трудно отличить от быстрого деления на одном снимке |
+| **time-lapse microscopy** | Filming the same cells repeatedly over hours; directly measures division rate, unlike a single snapshot | Многократная съёмка одних и тех же клеток на протяжении часов; прямо измеряет скорость деления, в отличие от одиночного снимка |
+| **OD600 / doubling time** | OD600 = cloudiness of the liquid at 600 nm light; as cells multiply it gets cloudier. Doubling time = time for the population to double; faster division = shorter doubling time | OD600 = мутность жидкости при свете 600 нм; при размножении клеток растёт. Время удвоения = время удвоения численности; быстрее деление = меньше время |
+| **stationary phase** | When nutrients run out, yeast stop dividing and rest; such cells are smaller and could mimic the predicted CH19 shrinkage | Когда питание исчерпано, дрожжи перестают делиться и переходят в покой; такие клетки мельче и могут имитировать уменьшение CH19 |
+| **quiescent cells** | Individual non-dividing, dormant cells; smaller than actively growing cells | Отдельные недепящиеся, спящие клетки; меньше активно растущих |
+| **viability / vital stain** | A dye that distinguishes live from dead cells; methylene blue stains dead cells blue, live cells stay clear. NOT used in the first analysed batch | Краситель, отличающий живые клетки от мёртвых; метиленовый синий красит мёртвые в синий, живые остаются прозрачными. НЕ применялся в первом пакете |
+| **kinetic effect** | An effect on the speed/rate of cell division (not on the number of cells) | Влияние на скорость деления клеток (не на их количество) |
+| **morphological effect** | An effect on the physical shape or size of cells | Влияние на форму или размер клеток |
+| **morphometry** | Quantitative measurement of cell shape, size, and geometry (area, elongation, roundness) | Количественное измерение формы, размера и геометрии клеток (площадь, вытянутость, округлость) |
+| **endpoint / static endpoint** | A single measurement taken at one moment (not a time-series); shows only the cells' state at the photograph, not how they changed | Одно измерение в один момент (не временной ряд); показывает только состояние клеток на снимке, не их изменение |
+| **confound / imaging confound** | An uncontrolled factor other than the treatment that could explain a difference (e.g. different focus, dilution, or lighting between channels) | Неконтролируемый фактор помимо воздействия, который мог бы объяснить различие (разная фокусировка, разведение, освещение между каналами) |
+
+### Study design — Дизайн исследования
+
+| Term / Термин | English meaning | Значение по-русски |
+|---|---|---|
+| **CH0 / CH17 / CH19 / CH21 (channels)** | Specific configurations of the emitter hardware; CH0 = emitter off (control), CH17/19/21 = three different settings. The numbers are control-software identifiers, not physical frequencies | Конкретные конфигурации излучателя; CH0 = выключен (контроль), CH17/19/21 = три разные настройки. Числа — идентификаторы из ПО управления, а не физические частоты |
+| **cycles 001 / 002 / 003** | Three independent repetitions of the whole experiment (biological replicates), each with freshly prepared yeast | Три независимых повторения всего эксперимента (биологические репликаты), каждый со свежими дрожжами |
+| **biological replicate** | An independent repetition with freshly prepared samples (distinct from re-measuring the same sample) | Независимое повторение со свежими образцами (в отличие от повторного измерения того же образца) |
+| **preregistration / OSF** | A public, time-stamped declaration of hypotheses and analysis plan made before data collection; prevents adjusting the analysis to fit results. OSF (Open Science Framework) is the free public registry that timestamps it | Публичное, заверенное временны́м штампом объявление гипотез и плана анализа до сбора данных; не даёт подогнать анализ под результаты. OSF (Open Science Framework) — бесплатный публичный реестр, фиксирующий его |
+| **double-blind** | Neither the analyst nor the scoring system (LLM) knows which sample belongs to which condition during scoring | Ни аналитик, ни оценивающая система (LLM) не знают принадлежности образца к условию во время оценки |
+
+---
+
 ## LICENSE / ЛИЦЕНЗИЯ
 
 CC-BY-NC-ND 4.0 International
@@ -570,4 +674,4 @@ The density batch is the first analysed slice of a larger preregistered programm
 
 ## NAVIGATION INDEX / НАВИГАЦИОННЫЙ ИНДЕКС
 
-[Key Results / Результаты](#key-results--ключевые-результаты) · [Overview / Обзор](#overview--обзор) · [Key Metrics / Метрики](#key-metrics--ключевые-метрики) · [Hypotheses / Гипотезы](#hypotheses--гипотезы) · [Experimental Design / Дизайн](#experimental-design--экспериментальный-дизайн) · [Outcome Variables / Переменные](#outcome-variables--переменные-исхода) · [Analysis Pipeline / Пайплайн](#analysis-pipeline--аналитический-пайплайн) · [Statistical Analysis / Статистика](#statistical-analysis--статистический-анализ) · [Equipment / Оборудование](#equipment--оборудование) · [Preliminary Results / Результаты](#preliminary-results--предварительные-результаты) · [AI/ML Analysis / AI-Анализ](#aiml-analysis--ai-анализ) · [Reports / Отчёты](#reports--отчёты) · [Timeline / Сроки](#timeline--временная-шкала) · [OSF / Регистрация](#osf-preregistration--предварительная-регистрация-osf) · [Patent / Патент](#patent-connection--связь-с-патентом) · [Team / Команда](#research-team--команда) · [Keywords / Слова](#keywords--ключевые-слова) · [Data Structure / Структура](#data-structure--структура-данных) · [ASRP Ecosystem / Экосистема](#asrp-ecosystem--экосистема-asrp) · [Contact / Контакты](#contact-information--контактная-информация) · [License / Лицензия](#license--лицензия)
+[Key Results / Результаты](#key-results--ключевые-результаты) · [Overview / Обзор](#overview--обзор) · [Key Metrics / Метрики](#key-metrics--ключевые-метрики) · [Hypotheses / Гипотезы](#hypotheses--гипотезы) · [Experimental Design / Дизайн](#experimental-design--экспериментальный-дизайн) · [Outcome Variables / Переменные](#outcome-variables--переменные-исхода) · [Analysis Pipeline / Пайплайн](#analysis-pipeline--аналитический-пайплайн) · [Statistical Analysis / Статистика](#statistical-analysis--статистический-анализ) · [Equipment / Оборудование](#equipment--оборудование) · [Preliminary Results / Результаты](#preliminary-results--предварительные-результаты) · [AI/ML Analysis / AI-Анализ](#aiml-analysis--ai-анализ) · [Reports / Отчёты](#reports--отчёты) · [Timeline / Сроки](#timeline--временная-шкала) · [OSF / Регистрация](#osf-preregistration--предварительная-регистрация-osf) · [Patent / Патент](#patent-connection--связь-с-патентом) · [Team / Команда](#research-team--команда) · [Keywords / Слова](#keywords--ключевые-слова) · [Data Structure / Структура](#data-structure--структура-данных) · [ASRP Ecosystem / Экосистема](#asrp-ecosystem--экосистема-asrp) · [Contact / Контакты](#contact-information--контактная-информация) · [Glossary / Глоссарий](#glossary--глоссарий) · [License / Лицензия](#license--лицензия)

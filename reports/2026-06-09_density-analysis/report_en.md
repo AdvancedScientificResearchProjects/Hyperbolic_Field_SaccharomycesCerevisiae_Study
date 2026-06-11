@@ -37,12 +37,12 @@ By magnification: 100× (белый) = 398 fields, 10× (жёлтый) = 389, cy
 
 ### 2.2. Replicate structure
 
-The replicate unit is the **experiment cycle** (set 001/002/003), not the individual photo. Multiple fields from one cycle are technical sub-samples (pseudoreplicates). Evidence strength therefore rests on **consistency across cycles**, not on per-field p-values. Note: the cyto2 **count** metric exists only for 100× fields, which are present in **cycles 2 and 3 only** → the count effect is N=2 cycles (untestable at the replicate level); occupancy spans all three cycles.
+The replicate unit is the **experiment cycle** (set 001/002/003), not the individual photo. Multiple fields from one cycle are technical sub-samples (pseudoreplicates — treating many photos of the same dish as if they were independent observations, which inflates the apparent sample size). Evidence strength therefore rests on **consistency across cycles**, not on per-field p-values. Note: the cyto2 **count** metric exists only for 100× fields, which are present in **cycles 2 and 3 only** → the count effect is N=2 cycles (untestable at the replicate level); occupancy spans all three cycles.
 
 ### 2.3. Analysis methods (three measurement methods)
 
 1. **CV cell count (cyto2)** — Cellpose `cyto2` instance segmentation, diameter calibrated to the cells (≈18 px at 1100-px downscale). Valid only at **100×** where cells are resolved; meaningless at 10× (confluent lawns of sub-resolution cells).
-2. **CV occupancy density** — segmentation-free: local texture energy + Otsu occupancy + edge density inside the field-of-view. Robust to the dataset's size heterogeneity (sparse fields AND lawns); applied to **all 972 fields**.
+2. **CV occupancy density** (occupancy = the fraction of the image area covered by cells; 0 = empty, 1 = full) — segmentation-free: local texture energy + Otsu occupancy + edge density inside the field-of-view. Robust to the dataset's size heterogeneity (sparse fields AND lawns); applied to **all 972 fields**.
 3. **Blind LLM scoring** — one independent LLM vision pass per field, neutral filenames, condition not disclosed; per-field density / cell estimate / budding / distribution. 920 fields scored.
 
 All three are **group-agnostic**: the channel is revealed only at the aggregation step. They are **method-independent but not observation-independent** — the two CV methods run on the identical pixels, so cross-method agreement guards against an *algorithm* artifact, not against a shared *imaging* confound (focus, dilution, session).
@@ -131,7 +131,7 @@ The blind LLM reproduces the same ordering (CH17 highest, CH21 below control) in
 
 ## 6. Method agreement
 
-Per-field Spearman correlations between the three independent measurements:
+Per-field Spearman correlations (ρ = Spearman correlation; a number from −1 to +1 measuring how consistently two methods rank the same fields; 1 = perfect agreement, 0 = none) between the three independent measurements:
 
 | Method pair | Magnification | ρ | n |
 |---|:---:|:---:|:---:|
@@ -188,7 +188,7 @@ Per-field Spearman correlations between the three independent measurements:
 5. **Possible per-channel imaging confounds** (focus, dilution, session) are not fully excluded; the two CV methods share the same pixels, so they do not control for this.
 6. **No viability measure**: there is no vital stain in this batch (confirmed), so live/dead fraction is not assessed here.
 7. **Cycle 1 reverses the effect** (CH21 densest there): the ordering holds in 2 of 3 cycles and is actively contradicted by the third — see §4.3. The count headline (+83 %/−21 %) rests on only the 2 cycles that have 100× data.
-8. **CH19's kinetic hypothesis is untestable from static endpoints**; requires OD600 doubling-time + time-lapse (see §9).
+8. **CH19's kinetic hypothesis is untestable from static endpoints** (endpoint = a single snapshot taken at one moment in time, which cannot show how cells changed over time); requires OD600 doubling-time + time-lapse (see §9).
 
 ---
 
@@ -198,7 +198,7 @@ Per-field Spearman correlations between the three independent measurements:
 
 **CH21** produces the lowest density in cycles 2–3 — **below** control (−21 % by count) — matching the protocol prediction that CH21 decelerates division. **But cycle 1 inverts this** (CH21 densest there, +74 % vs control), so the CH21 effect is not yet consistent across all cycles.
 
-**CH19** shows **no change in cell number** vs control — the **expected** result, not a null finding. The CH19 protocol hypothesis is **kinetic/morphological** (faster division, thinner/elongated cells), not a density increase, so cell count is the wrong axis to test it on. Testing the morphological axis directly (per-cell shape from cyto2 masks, 100×): CH19 cells are **~7.6 % smaller in mean area** than control (n=110 vs 82, p ≈ 6e-5, descriptive) — **but this is not CH19-specific** (CH17 −12.7 %, CH21 −6.1 %; every field channel is smaller than control), so cell-area alone does not isolate a CH19 effect. On the discriminating shape metric — eccentricity / major:minor aspect ratio — CH19 is **not more elongated**: eccentricity is marginally *lower* than control (0.544 vs 0.560, p = 0.039) and aspect ratio is flat (1.246 vs 1.256, n.s.) — i.e. if anything fractionally **rounder, not thinner**, the *opposite* of the prediction, and the effect is tiny (Δ ecc ≈ 0.016). The division-rate proxy (budding) is also **flat** (LLM Δ ≈ −0.01 on 0–3, n=104; cyto2 solidity 0.023 vs 0.016). **Verdict on CH19:** count-neutral as expected, but on this endpoint dataset **neither the thinner/elongated-cell prediction nor accelerated division is supported**. A proper test needs a **time-lapse protocol** (division *rate* is unmeasurable from static fields) and dedicated per-cell morphometry — flagged as the priority follow-up.
+**CH19** shows **no change in cell number** vs control — the **expected** result, not a null finding. The CH19 protocol hypothesis is **kinetic/morphological** (faster division, thinner/elongated cells), not a density increase, so cell count is the wrong axis to test it on. Testing the morphological axis directly (per-cell shape from cyto2 masks, 100×): CH19 cells are **~7.6 % smaller in mean area** than control (n=110 vs 82, p ≈ 6e-5 (= 0.00006; the probability the difference is chance alone — lower means stronger), descriptive (the p-value is shown for scale and direction only, not as a formal significance test, because the samples are not independent — see pseudoreplication)) — **but this is not CH19-specific** (CH17 −12.7 %, CH21 −6.1 %; every field channel is smaller than control), so cell-area alone does not isolate a CH19 effect. On the discriminating shape metric — eccentricity (a 0–1 measure of how elongated a cell is; 0 = perfect circle, 1 = a line) / major:minor aspect ratio (the ratio of a cell's longest to shortest diameter; 1.0 = round, higher = more elongated) — CH19 is **not more elongated**: eccentricity is marginally *lower* than control (0.544 vs 0.560, p = 0.039) and aspect ratio is flat (1.246 vs 1.256, n.s. (not statistically significant — too small to rule out chance)) — i.e. if anything fractionally **rounder, not thinner**, the *opposite* of the prediction, and the effect is tiny (Δ ecc ≈ 0.016). The division-rate proxy (budding — the fraction of yeast cells actively dividing, visible as a small bud on the mother cell) is also **flat** (LLM Δ ≈ −0.01 on 0–3, n=104; cyto2 solidity 0.023 vs 0.016). **Verdict on CH19:** count-neutral as expected, but on this endpoint dataset **neither the thinner/elongated-cell prediction nor accelerated division is supported**. A proper test needs a **time-lapse protocol** (division *rate* is unmeasurable from static fields) and dedicated per-cell morphometry — flagged as the priority follow-up.
 
 **Biological context & how to test CH19 properly.** The CH19 protocol prediction — accelerated division yielding smaller cells without a biomass/count increase — is biologically coherent: in budding yeast the Whi5/G1-sizer mechanism means accelerated Start passage produces smaller daughter cells (Di Talia 2007; Jorgensen & Tyers 2004), and division rate can be decoupled from biomass accumulation (Schmidt-Glenewinkel & Barkai 2014), so 'faster division, same count/biomass' is a valid scenario. However, our ~7.6 % area reduction is **consistent with but not diagnostic of** faster division — comparable shrinkage arises from confounds we did not control, notably dying/stationary-phase cells (≈27 % area loss; Kato 2021), nutrient limitation, or a higher quiescent fraction. A single-timepoint budding fraction (our LLM budding score) likewise cannot separate 'faster division' from 'G2/M arrest'. **Minimum experiment to actually test CH19:** an OD600 growth-curve doubling-time comparison (the gold standard for division rate), plus a budding-index time-course in exponential phase and a viability stain to exclude the dying-cell confound; time-lapse microscopy would confirm at single-cell level.
 
@@ -231,6 +231,54 @@ Per-field Spearman correlations between the three independent measurements:
 ### Dependencies
 
 - Python 3.11 venv; torch 2.5.1+cu121, cellpose 3.x (cyto2), opencv, scikit-image, scipy, matplotlib.
+
+---
+
+## Glossary
+
+Plain-language meaning of the technical terms used in this report.
+
+| Term | Plain-language meaning |
+|---|---|
+| n.s. | Not statistically significant — the difference between groups is too small to rule out chance. |
+| p / p-value | A number from 0 to 1 measuring the probability that an observed difference arose by chance. p < 0.05 = less than a 5% chance it is random. Scientific notation: 6e-5 = 0.00006 (very small = very unlikely to be chance). |
+| descriptive (p-value) | The p-value is shown for scale/direction only, not as a formal significance test, because the independent-samples assumption is violated (see pseudoreplication). |
+| ρ (rho) / Spearman correlation | A number from −1 to +1 measuring how consistently two methods rank the same fields. ρ = 0.88 = very strong agreement (they almost always agree on which field has more cells). |
+| pseudoreplication | Treating multiple photos from the same biological dish as independent observations. It inflates sample size and makes p-values artificially small. True replicates here are experiment cycles (3 total), not individual photos. |
+| Kruskal–Wallis | A statistical test comparing 3+ groups without assuming a bell-curve distribution. Used to test if cell counts differ by channel. |
+| SEM | Standard error of the mean — a measure of how precisely the mean is estimated (smaller = more precise). |
+| N=2 cycles | The cell-count result rests on only 2 independent experiment repetitions; too few to test statistically at the cycle level. |
+| Δ (delta) | Difference between two values. Δ ecc = 0.016 means eccentricity differs by 0.016 units. |
+| cyto2 / Cellpose | Open-source AI software that automatically finds and outlines individual cells in microscopy photos. "cyto2" = the neural network model trained for cell-body images. |
+| occupancy | Fraction of the image area covered by cells (0 = empty, 1 = full). Measured without outlining each cell individually, using pixel-brightness patterns. |
+| Otsu | Algorithm that automatically finds the brightness threshold separating cell pixels from background pixels. |
+| Canny | Edge-detection algorithm that finds cell outlines in an image; used here to count cell edges as a density proxy. |
+| FOV / field | One photograph taken through the microscope. 990 fields = 990 photos. The "field of view" is the area visible through the lens in one shot. |
+| segmentation | Identifying which image pixels belong to each cell and drawing its boundary. "Instance segmentation" = each cell outlined separately. |
+| blob | An alternative method for finding cells as rounded, filled regions in an image, without neural-network segmentation. |
+| downscale | Reducing the image pixel count before processing; standardizes cell pixel size across images and speeds analysis. |
+| eccentricity | Cell-shape metric (0–1): 0 = perfect circle, 1 = line. Higher = more elongated. |
+| aspect ratio | Longest diameter divided by shortest diameter of an ellipse fitted to the cell. 1.0 = circle; larger = more elongated. |
+| solidity | Shape metric (0–1) for how "compact" the cell boundary is. A budding cell has lower solidity (the bud creates an irregular boundary). |
+| budding fraction | The percentage of yeast cells actively dividing at the moment of imaging, visible as a small "bud" (bump) on the mother cell. Higher = more active division. |
+| 100× / 10× | Magnification: objects appear 100× or 10× larger than real size. At 100× individual yeast cells (~5–8 µm) are visible; at 10× only population-level density is seen. |
+| HEIC | Apple iPhone photo format. Here: photos taken through the microscope eyepiece with a smartphone. |
+| blind LLM | An AI model (Claude Opus 4.8) assessed each photo without knowing which channel it came from — preventing bias from knowing expected results. "Blind" = the scorer does not know the group assignment. |
+| group-agnostic | The analysis method does not use or see the channel labels until the very final step when all measurements are grouped. |
+| endpoint | A single measurement taken at one point in time (not a time-series). Cannot show how cells change over time; only their state at the moment of the photo. |
+| sign-flip | The direction of an effect reversed between conditions (cycle 1 showed the opposite ordering from cycles 2–3). |
+| Whi5 / G1-sizer | Whi5 is a protein that brakes cell division. The G1-sizer mechanism lets cells "measure" their size before committing to divide. Cells that pass the "Start" checkpoint while small produce small daughter cells. |
+| Start | The molecular decision point after which a yeast cell is committed to dividing. Crossing Start while small = smaller daughter cells. |
+| G2/M | Cell-cycle phases: G1 (growth) → S (DNA copying) → G2 (preparation) → M (division). "G2/M arrest" = cells stuck just before dividing; they look as if about to divide (may show buds) but never complete it. Hard to distinguish from fast division in a single photo. |
+| time-lapse | Filming the same cells repeatedly over hours (e.g. every 5 min); creates a movie of cell division. Directly measures division rate, unlike a single snapshot. |
+| OD600 / doubling time | OD600 = cloudiness of the liquid at 600 nm light. As cells multiply, the liquid gets cloudier. Doubling time = the time for the population to double in number. Faster-dividing culture = shorter doubling time. |
+| stationary phase | When nutrients run out, yeast cells stop dividing and enter a resting state. These cells are smaller and could mimic the predicted CH19 shrinkage. |
+| quiescent | Individual non-dividing cells in a dormant state. Smaller than actively growing cells. |
+| kinetic / morphological | Kinetic effect = an effect on the speed/rate of cell division (not the number of cells). Morphological effect = an effect on the physical shape or size of cells. |
+| viability stain | A dye that distinguishes live from dead cells under the microscope (e.g. methylene blue: live cells decolorize it, dead cells stay blue). Not used in this batch. |
+| a priori | Known or predicted before the experiment; CH17 was "a priori unknown" = no prediction was made for it beforehand. |
+| confound | An uncontrolled factor other than the treatment that could explain the observed difference (e.g. different focus, dilution, or lighting between channels). |
+| morphometry | Quantitative measurement of cell shape, size, and geometry (area, elongation, roundness). |
 
 ---
 
