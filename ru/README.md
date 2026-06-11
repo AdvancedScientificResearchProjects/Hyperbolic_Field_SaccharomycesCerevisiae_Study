@@ -184,9 +184,7 @@ Hyperbolic_Field_SaccharomycesCerevisiae_Study/
 │   │   └── staining/               (фото окрашивания метиленовым синим)
 │   └── equipment/                  (фото установки излучателей и датчиков)
 ├── results/
-│   ├── SEMANTICS_CONFIRMED.md      (подтверждённая руководителем семантика меток, 2026-06-09)
 │   ├── cv_analysis/
-│   │   ├── DENSITY_SUMMARY.md      (сводка CV-анализа плотности)
 │   │   ├── occupancy_full.csv / .json
 │   │   ├── white_counts.csv / .json
 │   │   └── white_counts_morpho.csv / .json
@@ -256,7 +254,7 @@ CH19 — не нулевой результат: его эффект кинет�
 
 ## Семантика меток, подтверждённая руководителем
 
-Источник: `../results/SEMANTICS_CONFIRMED.md` (раскрытие руководителя, 2026-06-09).
+Источник: раскрытие руководителя, 2026-06-09 (сверено с фото объективов микроскопа `results/SEMANTICS_objectives_photo.jpg`).
 
 - **N** = нейтральный раствор (среда роста)
 - **P** = питательный раствор (среда роста)

@@ -183,9 +183,7 @@ Hyperbolic_Field_SaccharomycesCerevisiae_Study/
 │   │   └── staining/               (methylene blue staining photos)
 │   └── equipment/                  (emitter and sensor setup photos)
 ├── results/
-│   ├── SEMANTICS_CONFIRMED.md      (researcher-confirmed label semantics, 2026-06-09)
 │   ├── cv_analysis/
-│   │   ├── DENSITY_SUMMARY.md      (CV density analysis summary)
 │   │   ├── occupancy_full.csv / .json
 │   │   ├── white_counts.csv / .json
 │   │   └── white_counts_morpho.csv / .json
@@ -254,7 +252,7 @@ General sequence for each experiment cycle (batch):
 
 ## Researcher-Confirmed Semantics
 
-Source: `../results/SEMANTICS_CONFIRMED.md` (researcher disclosure, 2026-06-09).
+Source: researcher disclosure, 2026-06-09 (cross-checked against microscope-objectives photo `results/SEMANTICS_objectives_photo.jpg`).
 
 - **N** = neutral solution (growth medium)
 - **P** = nutrient solution (growth medium)

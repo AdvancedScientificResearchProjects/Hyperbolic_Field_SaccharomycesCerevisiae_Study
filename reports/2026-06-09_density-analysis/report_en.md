@@ -215,8 +215,6 @@ Per-field Spearman correlations (ρ = Spearman correlation; a number from −1 t
 | `results/cv_analysis/white_counts_morpho.csv` | per-cell morphometrics (area, eccentricity, aspect ratio), 398 fields @ 100× — CH19 elongation follow-up |
 | `results/cv_analysis/occupancy_full.csv` | occupancy density, all 972 fields |
 | `results/llm_full/llm_full.json` | blind LLM scores, 920 fields |
-| `results/cv_analysis/DENSITY_SUMMARY.md` | running analysis log |
-| `results/SEMANTICS_CONFIRMED.md` | researcher-confirmed label meanings |
 
 > **Provenance note:** channel/medium/cycle/magnification for every field comes from `data/photos/journal-mapping.csv` (lab-journal transcription, 99.5 % coverage, researcher-confirmed semantics). The result CSVs carry no channel column; the join is reproducible only via that mapping file.
 

@@ -494,7 +494,6 @@ Hyperbolic_Field_SaccharomycesCerevisiae_Study/
 |
 |-- results/                           # Analysis outputs / Результаты анализа
 |   |-- cv_analysis/                   # CV density: counts + occupancy / CV-плотность: счёт + занятость
-|   |   |-- DENSITY_SUMMARY.md
 |   |   |-- white_counts.csv           # cyto2 cell counts / счёт клеток cyto2
 |   |   |-- white_counts_morpho.csv    # morphometry (area, shape) / морфометрия
 |   |   `-- occupancy_full.csv         # segmentation-free occupancy / занятость без сегментации
