@@ -455,7 +455,7 @@ The density signal was triangulated across three independent analysis stacks (bl
 
 | Name / ФИО | Role / Роль | Responsibilities / Обязанности |
 |-----------|------------|-------------------------------|
-| **Valeria Ovseannicova / Валерия Овсянникова** | Director of Biomedical Research Department / Директор департамента биомедицинских исследований | Hardware, emitter setup, microscopy, staining / Оборудование, установка, микроскопия, окрашивание |
+| **Valeria Ovseannicova / Валерия Овсянникова** | Director of Biomedical Research Department; Chief Researcher & Head of Experimental Work / Директор департамента биомедицинских исследований; главный исследователь и руководитель экспериментальных работ | Author of the experimental program and methodology; research infrastructure and hardware development; full-cycle research; hyperbolic field physics / Автор экспериментальной программы и методологии; разработчик исследовательской инфраструктуры и аппаратных установок; проведение исследований полного цикла; физика гиперболических полей |
 | **Denis Banchenko / Денис Банченко** | Program Director, Author of Methodology & Technology / Директор программы, автор методологии и технологии | Coordination, OSF registration, workflow / Координация, OSF, рабочий процесс |
 | **Alexandr Ovsyannikov / Александр Овсянников** | Head Hardware Engineer / Главный Инженер по Аппаратному Обеспечению | Electrical systems / Электрические системы |
 | **Mykhailo Kapustin / Михайло Капустин** | CTO & Director of AI and IT / Технический директор, директор ИИ и ИТ | Data infrastructure / Инфраструктура данных |
