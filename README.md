@@ -20,6 +20,20 @@
 
 ---
 
+<div align="center">
+
+[![💛 Support our work / Поддержать](https://img.shields.io/badge/💛%20Support%20our%20work-asrp.tech%2Fpatrons-FBBF24?style=for-the-badge)](https://asrp.tech/en/patrons)
+
+> **EN:** **If this work is valuable to you — support us.** 7 patron tiers from Principal Philanthropist to Individual Contributor.
+> **RU:** **Если эта работа вам полезна — поддержите нас.** 7 уровней меценатства — от Главного Филантропа до Индивидуального Вкладчика.
+>
+> **Support / Поддержать:** <https://asrp.tech/en/patrons>
+> **Investment inquiries / Инвестиционные запросы:** _pending — provide URL when available / в ожидании — добавляется при предоставлении_
+
+</div>
+
+---
+
 ## QUICK NAVIGATION / БЫСТРАЯ НАВИГАЦИЯ
 
 | Section / Раздел | Description / Описание | Status / Статус |
@@ -34,6 +48,7 @@
 | [Statistical Analysis / Статистика](#statistical-analysis--статистический-анализ) | LME + ANOVA + Tukey | Defined / Определено |
 | [Equipment / Оборудование](#equipment--оборудование) | Emitters, sensors, microscope / Излучатели, датчики, микроскоп | Upgraded / Обновлено |
 | [Team / Команда](#research-team--команда) | 8 researchers / 8 исследователей | Assigned / Назначены |
+| [Security / Безопасность](#security--безопасность) | Data classification tiers / Классификация данных | Defined / Определено |
 | [OSF Preregistration / OSF](#osf-preregistration--предварительная-регистрация-osf) | osf.io/vxkum | Registered / Зарегистрировано |
 | [Patent Connection / Патент](#patent-connection--связь-с-патентом) | KZ 2025/1095.1 | Substantive Exam / Экспертиза по существу |
 | [ASRP Ecosystem / Экосистема](#asrp-ecosystem--экосистема-asrp) | Related repos / Связанные репо | Linked / Связано |
@@ -447,6 +462,12 @@ The density signal was triangulated across three independent analysis stacks (bl
 
 ## PATENT CONNECTION / СВЯЗЬ С ПАТЕНТОМ
 
+This study is grounded in the Fractal Biomedical Hyperbolic Field System patent filing (see Key Metrics above) — the emitter hardware and channel configurations (CH17/CH19/CH21) used here are the same hardware family covered by that filing. / Данное исследование опирается на патентную заявку по Фрактальной Биомедицинской Системе Гиперболического Поля (см. Ключевые Метрики выше) — аппаратные излучатели и конфигурации каналов (CH17/CH19/CH21), используемые здесь, относятся к той же аппаратной линейке, что покрыта данной заявкой.
+
+| Patent / Патент | Application / Заявка | Status / Статус | Link / Ссылка |
+|-------------------|-------------------------|----------------------|------------------|
+| **Fractal Biomedical Hyperbolic Field System** | KZ 2025/1095.1 | Substantive Exam / Экспертиза по существу | [View / Просмотр](https://github.com/denisbanchenko/Kazpatent_Fractal_Biomedical_System_Patent) |
+
 ![Diagram 1](https://raw.githubusercontent.com/AdvancedScientificResearchProjects/Hyperbolic_Field_SaccharomycesCerevisiae_Study/main/charts/mermaid/retry_1.png)
 
 ---
@@ -466,6 +487,19 @@ The density signal was triangulated across three independent analysis stacks (bl
 
 ---
 
+## SECURITY / БЕЗОПАСНОСТЬ
+
+### Data Classification / Классификация данных
+
+| Level / Уровень | Access / Доступ | Marking / Маркировка | Description / Описание |
+|-------------------|-------------------|--------------------------|----------------------------|
+| **PUBLIC / ПУБЛИЧНЫЙ** | Open / Открытый | GREEN / ЗЕЛЁНЫЙ | General information / Общая информация |
+| **RESEARCH / ИССЛЕДОВАТЕЛЬСКИЙ** | Team Only / Только команда | YELLOW / ЖЁЛТЫЙ | Research data / Исследовательские данные |
+| **RESTRICTED / ОГРАНИЧЕННЫЙ** | Core Team / Основная команда | RED / КРАСНЫЙ | Sensitive analysis / Конфиденциальный анализ |
+| **INTERNAL / ВНУТРЕННИЙ** | Director Only / Только директор | BLACK / ЧЁРНЫЙ | Director-level review only / Только обзор уровня директора |
+
+---
+
 ## KEYWORDS / КЛЮЧЕВЫЕ СЛОВА
 
 **Subjects / Области:** Biomedical Engineering, Medical Microbiology, Biophysics, Systems Biology, Food Microbiology, Environmental Microbiology, Microbiology, Life Sciences, Medical Sciences, Biochemistry / Биомедицинская инженерия, медицинская микробиология, биофизика, системная биология, пищевая микробиология, экологическая микробиология, микробиология, науки о жизни, медицинские науки, биохимия
@@ -480,17 +514,20 @@ The density signal was triangulated across three independent analysis stacks (bl
 Hyperbolic_Field_SaccharomycesCerevisiae_Study/
 |
 |-- README.md
+|-- OSF_PREREGISTRATION.md             # OSF preregistration record / Запись предрегистрации OSF
+|-- en/README.md                       # English-only mirror / Англоязычное зеркало
+|-- ru/README.md                       # Russian-only mirror / Русскоязычное зеркало
 |
 |-- data/                              # Raw experimental data / Сырые данные
 |   |-- README.md                      # Data hub / Хаб данных
-|   `-- photos/                        # Flat photo set + manifest / Плоский набор + манифест
-|       |-- README.md
-|       |-- manifest.json
-|       |-- journal-mapping.csv   # Image -> channel/cycle map / Карта изображение -> канал/цикл
-|       |-- journal-mapping.json
-|       |-- journal-note.txt
-|       |-- original/                  # HEIC + PNG / iPhone-native
-|       `-- jpg/                       # JPEG previews / Превью
+|   |-- photos/                        # Flat photo set + manifest (990 fields) / Плоский набор + манифест (990 полей)
+|   |   |-- manifest.json, journal-mapping.csv/.json, journal-note.txt
+|   |   |-- original/                  # HEIC + PNG / iPhone-native
+|   |   `-- jpg/                       # 972 JPEG previews / 972 JPEG-превью
+|   |-- control-01/ .. control-03/     # Per-cycle control-group sample bins / Контрольные образцы по циклам
+|   |-- sample-ch17/, sample-ch19/, sample-ch21/, sample-ch17-19/   # Per-channel, protocol-aligned sample bins / Образцы по каналам
+|   |-- equipment/                     # Equipment setup photos / Фото оборудования
+|   `-- microscopy/                    # Microscopy + staining photos / Фото микроскопии и окрашивания
 |
 |-- results/                           # Analysis outputs / Результаты анализа
 |   |-- cv_analysis/                   # CV density: counts + occupancy / CV-плотность: счёт + занятость
@@ -501,16 +538,18 @@ Hyperbolic_Field_SaccharomycesCerevisiae_Study/
 |   `-- llm_full/                      # Full LLM analysis / Полный LLM-анализ
 |
 |-- reports/                           # Analysis reports / Отчёты
+|   |-- experiment_protocol_en.md, experiment_protocol_ru.md
 |   `-- 2026-06-09_density-analysis/   # Density report (EN/RU) + charts / Отчёт по плотности
 |
-|-- scripts/                           # CV pipeline scripts / Скрипты CV пайплайна
-|   `-- cv_analysis/                   # CV density analysis / Анализ плотности CV
+|-- scripts/                           # Analysis pipeline scripts / Скрипты аналитического пайплайна
+|   |-- cv_analysis/                   # CV density analysis / Анализ плотности CV
+|   `-- llm_analysis/                  # LLM blind-scoring pipeline / Пайплайн слепой LLM-оценки
 |
-|-- charts/                            # Mermaid diagrams / Mermaid-диаграммы
-`-- protocols/                         # Experiment protocols / Протоколы
+|-- charts/mermaid/                    # Mermaid diagrams (rendered PNG) / Mermaid-диаграммы (PNG)
+`-- protocols/                         # Experiment protocols (placeholder) / Протоколы (заполняется)
 ```
 
-See **[data/README.md](data/README.md)** — Data Hub indexing the flat photo set in `data/photos/` and the protocol-aligned analysis bins / Хаб данных, индексирующий плоский набор фотографий в `data/photos/` и протокол-выровненные аналитические корзины.
+_Repo size ≈2.4 GB, ~2,050 tracked files — mostly raw microscopy/equipment photos under `data/`; see **[data/README.md](data/README.md)** for the full data hub indexing the flat photo set in `data/photos/` and the protocol-aligned analysis bins. / Размер репозитория ≈2.4 ГБ, ~2050 отслеживаемых файлов — в основном сырые фото микроскопии/оборудования в `data/`; полный хаб данных — в **[data/README.md](data/README.md)**._
 
 ---
 
@@ -673,4 +712,4 @@ The density batch is the first analysed slice of a larger preregistered programm
 
 ## NAVIGATION INDEX / НАВИГАЦИОННЫЙ ИНДЕКС
 
-[Key Results / Результаты](#key-results--ключевые-результаты) · [Overview / Обзор](#overview--обзор) · [Key Metrics / Метрики](#key-metrics--ключевые-метрики) · [Hypotheses / Гипотезы](#hypotheses--гипотезы) · [Experimental Design / Дизайн](#experimental-design--экспериментальный-дизайн) · [Outcome Variables / Переменные](#outcome-variables--переменные-исхода) · [Analysis Pipeline / Пайплайн](#analysis-pipeline--аналитический-пайплайн) · [Statistical Analysis / Статистика](#statistical-analysis--статистический-анализ) · [Equipment / Оборудование](#equipment--оборудование) · [Preliminary Results / Результаты](#preliminary-results--предварительные-результаты) · [AI/ML Analysis / AI-Анализ](#aiml-analysis--ai-анализ) · [Reports / Отчёты](#reports--отчёты) · [Timeline / Сроки](#timeline--временная-шкала) · [OSF / Регистрация](#osf-preregistration--предварительная-регистрация-osf) · [Patent / Патент](#patent-connection--связь-с-патентом) · [Team / Команда](#research-team--команда) · [Keywords / Слова](#keywords--ключевые-слова) · [Data Structure / Структура](#data-structure--структура-данных) · [ASRP Ecosystem / Экосистема](#asrp-ecosystem--экосистема-asrp) · [Contact / Контакты](#contact-information--контактная-информация) · [Glossary / Глоссарий](#glossary--глоссарий) · [License / Лицензия](#license--лицензия)
+[Key Results / Результаты](#key-results--ключевые-результаты) · [Overview / Обзор](#overview--обзор) · [Key Metrics / Метрики](#key-metrics--ключевые-метрики) · [Hypotheses / Гипотезы](#hypotheses--гипотезы) · [Experimental Design / Дизайн](#experimental-design--экспериментальный-дизайн) · [Outcome Variables / Переменные](#outcome-variables--переменные-исхода) · [Analysis Pipeline / Пайплайн](#analysis-pipeline--аналитический-пайплайн) · [Statistical Analysis / Статистика](#statistical-analysis--статистический-анализ) · [Equipment / Оборудование](#equipment--оборудование) · [Preliminary Results / Результаты](#preliminary-results--предварительные-результаты) · [AI/ML Analysis / AI-Анализ](#aiml-analysis--ai-анализ) · [Reports / Отчёты](#reports--отчёты) · [Timeline / Сроки](#timeline--временная-шкала) · [OSF / Регистрация](#osf-preregistration--предварительная-регистрация-osf) · [Patent / Патент](#patent-connection--связь-с-патентом) · [Team / Команда](#research-team--команда) · [Security / Безопасность](#security--безопасность) · [Keywords / Слова](#keywords--ключевые-слова) · [Data Structure / Структура](#data-structure--структура-данных) · [ASRP Ecosystem / Экосистема](#asrp-ecosystem--экосистема-asrp) · [Contact / Контакты](#contact-information--контактная-информация) · [Glossary / Глоссарий](#glossary--глоссарий) · [License / Лицензия](#license--лицензия)
