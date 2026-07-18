@@ -592,7 +592,6 @@ _Repo size ≈2.4 GB, ~2,050 tracked files — mostly raw microscopy/equipment p
 | Field / Поле | Value / Значение |
 |--------------|------------------|
 | **Organization / Организация** | Advanced Scientific Research Projects LLP / ТОО "Перспективные Научно-Исследовательские Разработки" |
-| **Address / Адрес** | Komarova St. 37, Apt 56, Baikonur, 468320 / Ул. Комарова 37, кв. 56, г. Байконур, 468320 |
 | **Country / Страна** | Republic of Kazakhstan / Республика Казахстан |
 | **Website / Веб-сайт** | [asrp.tech](https://asrp.tech) |
 | **Email** | info@asrp.tech |
